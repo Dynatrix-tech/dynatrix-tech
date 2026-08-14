@@ -1,0 +1,1875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dynatrix Tech — Shopify, Webflow, SEO & Social Media Growth</title>
+<meta name="description" content="Dynatrix Tech builds high-converting Shopify & Webflow stores and grows them with SEO and social media marketing.">
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<link rel="shortcut icon" href="assets/favicon.ico">
+
+<!-- Open Graph / Social -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Dynatrix Tech — Shopify, Webflow, SEO & Social Media Growth">
+<meta property="og:description" content="Dynatrix Tech builds high-converting Shopify & Webflow stores and grows them with SEO and social media marketing.">
+<meta property="og:image" content="https://dynatrixtech.com/assets/og-image.png">
+<meta property="og:url" content="https://dynatrixtech.com">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Dynatrix Tech — Shopify, Webflow, SEO & Social Media Growth">
+<meta name="twitter:description" content="Dynatrix Tech builds high-converting Shopify & Webflow stores and grows them with SEO and social media marketing.">
+<meta name="twitter:image" content="https://dynatrixtech.com/assets/og-image.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   DYNATRIX TECH — original design: bold editorial / Swiss-poster
+   Paper white #FFFFFF · Ink #0A0A0A · Signal Blue #2440FF
+   Type: Archivo Black (display) / Inter (body + labels)
+   Sharp corners, thick rules, asymmetric index layouts.
+   ============================================================ */
+
+:root{
+  --bg: #FFFFFF;
+  --surface: #FFFFFF;
+  --surface-alt: #F2F2EF;
+  --ink: #0A0A0A;
+  --ink-dim: #4A4A4A;
+  --ink-faint: #8C8C8C;
+
+  --line: #0A0A0A;
+  --line-soft: #E2E2DE;
+
+  --blue: #2440FF;
+  --blue-dark: #1830CC;
+  --blue-dim: rgba(36,64,255,0.07);
+  --blue-line: rgba(36,64,255,0.35);
+
+  --display: "Archivo Black", "Inter", sans-serif;
+  --body: "Inter", sans-serif;
+  --label: "Inter", sans-serif;
+
+  --container: 1180px;
+  --radius: 4px;
+}
+
+*,*::before,*::after{ box-sizing: border-box; }
+html{ scroll-behavior: smooth; overflow-x: hidden; }
+
+body{
+  margin:0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+img{ max-width:100%; display:block; }
+a{ color: inherit; text-decoration: none; }
+ul{ list-style:none; margin:0; padding:0; }
+button{ font-family: inherit; font-size: inherit; }
+
+h1,h2,h3,h4{
+  font-family: var(--display);
+  font-weight: 400; /* Archivo Black is already heavy at 400 */
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  margin: 0 0 0.4em;
+  color: var(--ink);
+}
+h1{ font-size: clamp(2.6rem, 6vw, 5.2rem); }
+h2{ font-size: clamp(2rem, 4vw, 3.1rem); }
+h3{ font-size: 1.15rem; text-transform:none; font-family: var(--body); font-weight: 700; }
+p{ margin: 0 0 1em; color: var(--ink-dim); }
+
+.container{ max-width: var(--container); margin: 0 auto; padding: 0 28px; }
+
+.mark-highlight{
+  background: var(--blue);
+  color: #fff;
+  padding: 0 10px;
+  display: inline-block;
+}
+
+.eyebrow{
+  font-family: var(--label);
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+.eyebrow .num{ color: var(--blue); }
+.eyebrow.center{ justify-content:center; }
+
+/* ---------- Buttons — sharp corners, high contrast ---------- */
+.btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px 28px;
+  border-radius: var(--radius);
+  font-family: var(--body);
+  font-weight: 700;
+  font-size: 0.9rem;
+  border: 2px solid var(--ink);
+  background: none;
+  margin: 0;
+  cursor: pointer;
+  transition: transform .15s ease, background .15s ease, color .15s ease, border-color .15s ease;
+}
+.btn-primary{ background: var(--ink); color: #fff; }
+.btn-primary:hover{ background: var(--blue); border-color: var(--blue); transform: translate(-2px,-2px); }
+.btn-ghost{ background: var(--surface); border-color: var(--ink); color: var(--ink); }
+.btn-ghost:hover{ background: var(--ink); color: #fff; transform: translate(-2px,-2px); }
+.btn-amber{ background: var(--blue); color: #fff; border-color: var(--blue); }
+.btn-amber:hover{ background: #fff; color: var(--blue); transform: translate(-2px,-2px); }
+.btn-block{ width:100%; }
+.btn-sm{ padding: 10px 18px; font-size: 0.8rem; border-width: 1.5px; }
+.btn-outline-round{ border: 1.5px solid var(--ink); border-radius: 999px; background: var(--surface); color: var(--ink); padding: 9px 18px; font-size:0.8rem; }
+.btn-outline-round:hover{ background: var(--ink); color:#fff; }
+
+button[data-goto]:not(.btn){
+  background: none; border: none; padding: 0; margin: 0;
+  font: inherit; color: inherit; cursor: pointer; text-align: left;
+}
+button[data-goto].btn{ text-align: center; cursor: pointer; }
+
+/* ---------- Header ---------- */
+.site-header{
+  position: sticky; top:0; z-index: 100;
+  background: #fff;
+  border-bottom: 2px solid var(--ink);
+}
+.nav-wrap{
+  display:flex; align-items:center; justify-content:space-between;
+  padding: 18px 28px;
+  max-width: var(--container);
+  margin:0 auto;
+}
+.logo{
+  font-family: var(--display);
+  font-size: 1.1rem;
+  letter-spacing: -0.01em;
+  display:flex; align-items:center; gap:10px;
+  color: var(--ink);
+  text-transform: uppercase;
+}
+.brand-mark{ width: 34px; height: 34px; flex-shrink:0; }
+.logo span.dim{ color: var(--blue); }
+
+.nav-links{ display:flex; align-items:center; gap: 32px; font-size: 0.86rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.02em; }
+.nav-links a, .nav-links button{
+  position:relative; color: var(--ink-dim); padding: 6px 0;
+  transition: color .15s ease; background:none; border:none; font: inherit; cursor:pointer;
+}
+.nav-links a:hover, .nav-links button:hover,
+.nav-links a.active, .nav-links button.active{ color: var(--ink); }
+.nav-links a.active::after, .nav-links button.active::after{
+  content:""; position:absolute; left:0; right:0; bottom:-4px; height:3px; background: var(--blue);
+}
+.nav-cta{ display:flex; align-items:center; gap:14px; }
+.social-icons{ display:none; }
+
+.nav-toggle{ display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:pointer; padding:6px; }
+.nav-toggle span{ width:22px; height:2px; background: var(--ink); }
+
+/* ---------- Footer ---------- */
+.site-footer{
+  border-top: 2px solid var(--ink);
+  background: var(--bg);
+  padding: 60px 0 24px;
+}
+.footer-grid{ display:grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 40px; padding-bottom: 44px; }
+.footer-grid h4{ font-family: var(--label); font-weight: 700; font-size: 0.74rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 18px; }
+.footer-grid a, .footer-grid button{ color: var(--ink-dim); background:none; border:none; padding:0; font: inherit; cursor:pointer; text-align:left; }
+.footer-grid li{ margin-bottom: 12px; }
+.footer-grid a:hover, .footer-grid button:hover{ color: var(--blue); }
+.footer-brand{
+  font-family: var(--display); text-transform:uppercase; font-size:1.3rem; margin-bottom:12px;
+  display:flex; align-items:center; gap:12px;
+}
+.footer-brand .brand-mark{ width: 38px; height: 38px; }
+.footer-brand .dim{ color: var(--blue); }
+.footer-bottom{
+  display:flex; justify-content:space-between; align-items:center;
+  padding-top: 24px; border-top: 1px solid var(--line-soft);
+  font-size: 0.8rem; color: var(--ink-faint); flex-wrap: wrap; gap: 12px;
+  text-transform: uppercase; letter-spacing: .04em;
+}
+
+/* ---------- Sections ---------- */
+section{ padding: 100px 0; }
+.section-tight{ padding: 70px 0; }
+.section-head{ max-width: 680px; margin-bottom: 50px; }
+.section-head.center{ margin-left:auto; margin-right:auto; text-align:center; }
+.section-head-row{ display:flex; justify-content:space-between; align-items:flex-end; margin-bottom: 44px; gap: 24px; flex-wrap:wrap; border-bottom: 2px solid var(--ink); padding-bottom: 24px; }
+.section-head-row .section-head{ margin-bottom:0; }
+.link-arrow{ font-weight:700; font-size:0.85rem; text-transform:uppercase; letter-spacing:.03em; color: var(--ink); white-space:nowrap; padding-bottom: 4px; border-bottom: 2px solid var(--blue); }
+.link-arrow:hover{ color: var(--blue); }
+
+/* ---------- Hero ---------- */
+.hero{ padding: 60px 0 0; border-bottom: 2px solid var(--ink); }
+.hero-inner{ max-width: var(--container); margin:0 auto; padding: 0 28px 60px; }
+.hero-top{ display:grid; grid-template-columns: 1.35fr 1fr; gap: 50px; align-items:start; }
+.hero h1{ max-width: 640px; }
+.hero .lede{ max-width: 480px; font-size: 1.1rem; color: var(--ink-dim); margin-top: 24px; }
+.hero-cta{ display:flex; gap:16px; margin-top: 32px; flex-wrap: wrap; }
+
+.profile-photo{ position:relative; }
+.profile-photo-inner{
+  border: 2px dashed #CBCBC4;
+  aspect-ratio: 4 / 5;
+  min-height: 340px;
+  background: var(--surface-alt);
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  gap: 14px;
+}
+.profile-photo-icon{
+  width: 46px; height:46px; border: 2px solid var(--ink-faint);
+  border-radius:50%; display:flex; align-items:center; justify-content:center;
+  font-family: var(--display); font-size: 1.3rem; color: var(--ink-faint);
+}
+.profile-photo-label{
+  font-size: 0.78rem; font-weight:700; text-transform:uppercase; letter-spacing:.04em; color: var(--ink-faint);
+}
+.profile-photo-tag{
+  position:absolute; bottom:14px; left:14px;
+  background: var(--blue); color:#fff;
+  font-size: 0.72rem; font-weight:700; text-transform:uppercase; letter-spacing:.04em;
+  padding: 8px 14px;
+}
+
+.stat-strip{
+  display:grid; grid-template-columns: repeat(4,1fr);
+  margin-top: 60px;
+  border-top: 2px solid var(--ink);
+}
+.stat-strip .stat{ padding: 26px 24px 0; border-right: 1px solid var(--line-soft); }
+.stat-strip .stat:last-child{ border-right:none; }
+.stat-strip .stat-num{ font-family: var(--display); font-size: 2.4rem; color: var(--ink); }
+.stat-strip .stat-num .blue{ color: var(--blue); }
+.stat-strip .stat-label{ font-size: 0.8rem; color: var(--ink-dim); margin-top: 8px; text-transform:uppercase; letter-spacing:.03em; font-weight:600; }
+
+/* ---------- Ticker (black band marquee) ---------- */
+.ticker-band{ background: var(--ink); overflow: hidden; padding: 16px 0; }
+.ticker-track{ display:flex; width: max-content; gap: 0; animation: tickerScroll 24s linear infinite; }
+.ticker-band:hover .ticker-track{ animation-play-state: paused; }
+.ticker-item{
+  font-family: var(--display); font-size: 1.05rem; color: #fff;
+  text-transform: uppercase; white-space: nowrap; padding: 0 28px;
+  display:flex; align-items:center; gap:28px;
+}
+.ticker-item::after{ content:"—"; color: var(--blue); }
+@keyframes tickerScroll{ from{ transform: translateX(0); } to{ transform: translateX(-50%); } }
+
+/* ---------- Index list (services / portfolio) ---------- */
+.index-list{ border-top: 2px solid var(--ink); }
+.index-row{
+  display:grid; grid-template-columns: 60px 1fr 1.4fr 140px;
+  align-items:center; gap: 30px;
+  padding: 34px 0;
+  border-bottom: 1px solid var(--line-soft);
+  transition: background .18s ease;
+  position: relative;
+}
+.index-row:hover{ background: var(--blue-dim); }
+.index-row .idx-num{ font-family: var(--display); font-size: 1rem; color: var(--blue); }
+.index-row h3{ font-family: var(--display); text-transform:uppercase; font-size: 1.4rem; letter-spacing:-0.01em; }
+.index-row .idx-desc{ font-size: 0.92rem; color: var(--ink-dim); margin:0; }
+.index-row .idx-tags{ display:flex; flex-wrap:wrap; gap:8px; justify-content:flex-end; }
+.index-row .arrow-cta{
+  width:44px; height:44px; border-radius:50%; border: 1.5px solid var(--ink);
+  display:flex; align-items:center; justify-content:center; flex-shrink:0;
+  transition: background .15s ease, color .15s ease, transform .15s ease;
+  justify-self:end;
+}
+.index-row:hover .arrow-cta{ background: var(--blue); border-color: var(--blue); color:#fff; transform: rotate(45deg); }
+.tag{
+  font-size: 0.7rem; font-weight: 700; padding: 5px 12px;
+  border: 1px solid var(--line-soft); color: var(--ink-dim); background: var(--surface);
+  text-transform: uppercase; letter-spacing:.02em;
+}
+
+/* ---------- Cards (generic) ---------- */
+.card{
+  background: var(--surface); border: 2px solid var(--ink); border-radius: var(--radius);
+  padding: 30px; transition: transform .18s ease, box-shadow .18s ease;
+}
+.card:hover{ transform: translate(-3px,-3px); box-shadow: 5px 5px 0 var(--ink); }
+
+.services-grid{ display:grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.service-card{ border-color: var(--line-soft); }
+.service-card:hover{ border-color: var(--ink); }
+.service-card .icon{
+  width: 46px; height: 46px; background: var(--ink); color: #fff;
+  display:flex; align-items:center; justify-content:center;
+  font-family: var(--display); font-size: 0.85rem; margin-bottom: 22px;
+}
+.service-card h3{ margin-bottom: 10px; }
+.service-card p{ font-size: 0.92rem; margin-bottom: 20px; }
+.tag-row{ display:flex; flex-wrap:wrap; gap:8px; }
+
+/* ---------- Two column ---------- */
+.two-col{ display:grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items:center; }
+.two-col .visual-block{
+  min-height:320px; border: 2px solid var(--ink); position:relative;
+  display:flex; align-items:center; justify-content:center;
+  background: var(--surface-alt); overflow:hidden;
+}
+.visual-block .mark-big{ font-family: var(--display); font-size: 3rem; color: var(--blue); text-transform:uppercase; }
+.visual-block::before{
+  content:""; position:absolute; width:120px; height:120px; background: var(--blue);
+  top:-40px; right:-40px; opacity:0.08;
+}
+
+/* ---------- Process (numbered vertical timeline) ---------- */
+.how-section{ background: var(--ink); color:#fff; }
+.how-section .eyebrow{ color: rgba(255,255,255,0.6); }
+.how-section .eyebrow .num{ color: var(--blue); }
+.how-section h2{ color:#fff; }
+.timeline{ margin-top: 60px; border-top: 1px solid rgba(255,255,255,0.18); }
+.timeline-row{
+  display:grid; grid-template-columns: 90px 1fr 2fr;
+  gap: 30px; padding: 40px 0; border-bottom: 1px solid rgba(255,255,255,0.18);
+  align-items:start;
+}
+.timeline-row .t-num{ font-family: var(--display); font-size: 2rem; color: var(--blue); }
+.timeline-row h3{ color:#fff; font-family: var(--display); text-transform:uppercase; font-size:1.3rem; }
+.timeline-row p{ color: rgba(255,255,255,0.68); font-size: 0.95rem; margin-bottom:18px; max-width:480px; }
+.timeline-row .btn{ border-color: rgba(255,255,255,0.4); color:#fff; background: transparent; }
+.timeline-row .btn:hover{ background: var(--blue); border-color: var(--blue); }
+
+/* ---------- Pricing ---------- */
+.pricing-grid{ display:grid; grid-template-columns: repeat(3,1fr); gap: 22px; }
+.pricing-card{ display:flex; flex-direction:column; position:relative; border-color: var(--line-soft); }
+.pricing-card.featured{ border-color: var(--ink); box-shadow: 6px 6px 0 var(--blue); }
+.pricing-card .badge{ position:absolute; top:-13px; right:24px; background: var(--blue); color:#fff; font-size: 0.7rem; font-weight:700; padding: 5px 12px; text-transform:uppercase; }
+.pricing-card .plan-name{ font-size: 0.78rem; font-weight:700; text-transform: uppercase; letter-spacing: .08em; color: var(--ink-faint); margin-bottom: 10px; }
+.pricing-card .price{ font-family: var(--display); font-size: 2rem; margin-bottom: 4px; text-transform:none; }
+.pricing-card .price span{ font-family: var(--body); font-size: 0.85rem; color: var(--ink-faint); font-weight: 400; }
+.pricing-card .plan-desc{ font-size: 0.88rem; margin-bottom: 22px; }
+.pricing-card .feature-list{ flex:1; margin-bottom: 24px; }
+.pricing-card .feature-list li{ font-size: 0.88rem; color: var(--ink-dim); padding-left: 22px; position:relative; margin-bottom: 12px; }
+.pricing-card .feature-list li::before{ content: "+"; position:absolute; left:0; top:0; color: var(--blue); font-weight:800; }
+
+/* ---------- Filter tabs ---------- */
+.filter-row{ display:flex; gap:10px; margin-bottom: 40px; flex-wrap:wrap; }
+.filter-btn{
+  padding: 9px 18px; border-radius: 999px; border: 1.5px solid var(--ink);
+  background: var(--surface); color: var(--ink); font-weight:700; font-size: 0.8rem;
+  text-transform: uppercase; cursor:pointer; transition: all .15s ease;
+}
+.filter-btn.active, .filter-btn:hover{ background: var(--ink); color:#fff; }
+
+/* ---------- Testimonials — horizontal scroll rail ---------- */
+.rail-wrap{ position:relative; }
+.rail{
+  display:flex; gap: 20px; overflow-x: auto; scroll-snap-type: x mandatory;
+  padding-bottom: 10px; scrollbar-width: none;
+}
+.rail::-webkit-scrollbar{ display:none; }
+.rail-card{
+  scroll-snap-align: start; flex: 0 0 380px;
+  border: 2px solid var(--ink); background: var(--surface);
+  padding: 32px; display:flex; flex-direction:column;
+}
+.rail-card .stars{ color: var(--blue); margin-bottom: 18px; letter-spacing:3px; }
+.rail-card blockquote{ margin:0 0 24px; font-size: 1.02rem; font-weight:500; color: var(--ink); line-height:1.5; flex:1; }
+.rail-card .name{ font-weight:700; font-size:0.9rem; }
+.rail-card .role{ font-size:0.8rem; color: var(--ink-faint); margin-top:2px; }
+.rail-controls{ display:flex; justify-content:flex-end; gap:12px; margin-top: 24px; }
+.arrow-btn{
+  width:46px; height:46px; border-radius:50%; border: 2px solid var(--ink); background: var(--surface);
+  display:flex; align-items:center; justify-content:center; cursor:pointer; color: var(--ink); flex-shrink:0;
+  transition: background .15s ease, color .15s ease;
+}
+.arrow-btn:hover{ background: var(--ink); color:#fff; }
+
+.review-grid{ display:none; } /* not used in this design — replaced by rail */
+
+/* ---------- Team ---------- */
+.team-grid{ display:grid; grid-template-columns: repeat(4,1fr); gap: 22px; }
+.team-card .photo{ height: 190px; border: 2px solid var(--ink); background: var(--surface-alt); margin-bottom: 16px; position:relative; overflow:hidden; }
+.team-card .name{ font-weight:700; }
+.team-card .role{ font-size:0.75rem; color: var(--blue); font-weight:700; text-transform:uppercase; }
+
+/* ---------- Values ---------- */
+.values-grid{ display:grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
+
+/* ---------- Blog ---------- */
+.blog-grid{ display:grid; grid-template-columns: repeat(3,1fr); gap: 22px; }
+.blog-card{ border-color: var(--line-soft); }
+.blog-card:hover{ border-color: var(--ink); }
+.blog-card .thumb{ height: 170px; margin-bottom: 18px; position: relative; overflow:hidden; border: 2px solid var(--ink); background: var(--surface-alt); }
+.blog-card .cat{ font-size: 0.72rem; font-weight:700; color: var(--blue); text-transform:uppercase; letter-spacing:.06em; margin-bottom: 10px; display:block; }
+.blog-card .meta{ font-size: 0.74rem; color: var(--ink-faint); margin-top:16px; }
+.blog-featured{
+  display:grid; grid-template-columns: 1.1fr 1fr; gap: 40px;
+  border: 2px solid var(--ink); padding: 30px; margin-bottom: 60px; align-items:center; background: var(--surface);
+}
+.blog-featured .thumb{ height: 260px; border: 2px solid var(--ink); }
+
+/* ---------- FAQ ---------- */
+.faq-list{ max-width: 780px; margin: 0 auto; border-top: 2px solid var(--ink); }
+.faq-item{ border-bottom: 1px solid var(--line-soft); }
+.faq-question{
+  width:100%; display:flex; align-items:center; justify-content:space-between; gap: 20px;
+  padding: 24px 4px; background:none; border:none; text-align:left; cursor:pointer;
+  font-family: var(--body); font-size: 1.02rem; font-weight: 700; color: var(--ink);
+}
+.faq-question .plus{
+  flex-shrink:0; width: 28px; height: 28px; border: 1.5px solid var(--ink);
+  display:flex; align-items:center; justify-content:center; color: var(--ink);
+  transition: transform .25s ease, background .2s ease, color .2s ease;
+}
+.faq-item.open .faq-question .plus{ transform: rotate(45deg); background: var(--blue); border-color: var(--blue); color:#fff; }
+.faq-answer{ max-height:0; overflow:hidden; transition: max-height .3s ease; }
+.faq-answer p{ padding: 0 4px 24px; margin:0; font-size: 0.94rem; max-width: 640px; }
+
+/* ---------- Contact ---------- */
+.contact-grid{ display:grid; grid-template-columns: 1fr 1fr; gap: 50px; }
+.form-row{ margin-bottom: 20px; }
+.form-row label{ display:block; font-size: 0.75rem; font-weight:700; color: var(--ink-faint); text-transform:uppercase; letter-spacing:.05em; margin-bottom: 8px; }
+.form-row input, .form-row textarea, .form-row select{
+  width:100%; background: var(--surface); border: 1.5px solid var(--ink); border-radius: var(--radius);
+  padding: 13px 14px; color: var(--ink); font-family: var(--body); font-size: 0.95rem;
+}
+.form-row input:focus, .form-row textarea:focus, .form-row select:focus{ outline: none; border-color: var(--blue); box-shadow: 0 0 0 3px var(--blue-dim); }
+.form-row textarea{ resize: vertical; min-height: 120px; }
+.two-field{ display:grid; grid-template-columns: 1fr 1fr; gap:20px; }
+.contact-info-card{ border-bottom: 1px solid var(--line-soft); padding: 22px 0; display:flex; gap:16px; }
+.contact-info-card:first-child{ padding-top:0; }
+.contact-info-card .ic{
+  width: 40px; height:40px; background: var(--ink); color: #fff;
+  display:flex; align-items:center; justify-content:center; flex-shrink:0; font-weight:700;
+}
+.form-note{ font-size: 0.78rem; color: var(--ink-faint); margin-top: 14px; }
+.form-success{ display:none; background: var(--blue-dim); border: 1.5px solid var(--blue); border-radius: var(--radius); padding: 16px 18px; font-size: 0.85rem; margin-top: 18px; }
+.form-success.show{ display:block; }
+
+/* ---------- CTA band ---------- */
+.cta-band{ padding: 90px 40px; text-align:center; position: relative; overflow:hidden; background: var(--ink); color: #fff; }
+.cta-band .shape{ position:absolute; background: var(--blue); }
+.cta-band .shape-1{ width:280px; height:280px; top:-100px; left:-100px; opacity:0.9; }
+.cta-band .shape-2{ width:200px; height:200px; bottom:-80px; right:-60px; opacity:0.9; transform: rotate(15deg); }
+.cta-band-inner{ position:relative; z-index:1; max-width: 640px; margin:0 auto; }
+.cta-band h2{ margin-bottom: 18px; color:#fff; }
+.cta-band p{ max-width: 480px; margin:0 auto 30px; color: rgba(255,255,255,0.72); }
+.cta-buttons{ display:flex; gap:16px; justify-content:center; flex-wrap:wrap; position:relative; z-index:1; }
+.cta-band .btn-ghost{ border-color: #fff; color:#fff; background:none; }
+.cta-band .btn-ghost:hover{ background:#fff; color: var(--ink); }
+
+/* ---------- Page hero (interior pages) ---------- */
+.page-hero{ padding: 70px 0 50px; border-bottom: 2px solid var(--ink); }
+.page-hero p.lede{ max-width: 560px; margin-top: 20px; }
+
+/* ---------- Utility ---------- */
+.stack{ display:flex; flex-direction:column; gap: 14px; }
+.center{ text-align:center; }
+
+/* ---------- Comparison (us vs freelancers) ---------- */
+.compare-section{ background: var(--surface-alt); }
+.compare-grid{ display:grid; grid-template-columns: 1fr 1fr; gap: 0; max-width: 880px; margin: 0 auto; border: 2px solid var(--ink); }
+.compare-col{ padding: 36px 34px; }
+.compare-col:first-child{ border-right: 2px solid var(--ink); }
+.compare-col-featured{ background: var(--ink); color:#fff; }
+.compare-head{ font-weight: 700; font-size: 1.05rem; text-transform: uppercase; letter-spacing: .02em; margin-bottom: 22px; }
+.compare-col-featured .compare-head{ color: var(--blue); }
+.compare-list li{ display:flex; align-items:flex-start; gap: 12px; font-size: 0.92rem; margin-bottom: 16px; color: var(--ink-dim); }
+.compare-col-featured .compare-list li{ color: rgba(255,255,255,0.85); }
+.compare-list li:last-child{ margin-bottom:0; }
+.ic-x{ color: #C0392B; font-weight:800; flex-shrink:0; }
+.ic-check{ color: var(--blue); font-weight:800; flex-shrink:0; }
+
+/* ---------- Popup modal (free audit offer) ---------- */
+.popup-overlay{
+  position: fixed; inset: 0; background: rgba(10,10,10,0.6);
+  display:flex; align-items:center; justify-content:center;
+  padding: 20px; z-index: 1000;
+  opacity: 0; pointer-events: none;
+  transition: opacity .25s ease;
+}
+.popup-overlay.show{ opacity: 1; pointer-events: auto; }
+.popup-modal{
+  background: #fff; border: 2px solid var(--ink);
+  max-width: 460px; width: 100%;
+  padding: 40px 36px;
+  position: relative;
+  transform: translateY(16px);
+  transition: transform .25s ease;
+}
+.popup-overlay.show .popup-modal{ transform: translateY(0); }
+.popup-close{
+  position: absolute; top: 16px; right: 16px;
+  width: 32px; height: 32px; border: 1.5px solid var(--line-soft);
+  background: none; cursor: pointer; color: var(--ink);
+  display:flex; align-items:center; justify-content:center; font-size: 1rem;
+}
+.popup-close:hover{ background: var(--ink); color:#fff; border-color: var(--ink); }
+.popup-tag{
+  display:inline-block; background: var(--blue); color:#fff;
+  font-size: 0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:.06em;
+  padding: 6px 12px; margin-bottom: 18px;
+}
+.popup-modal h3{
+  font-family: var(--display); text-transform: uppercase; font-size: 1.5rem;
+  margin-bottom: 12px; letter-spacing: -0.01em;
+}
+.popup-modal p{ font-size: 0.92rem; margin-bottom: 22px; }
+.popup-form .form-row{ margin-bottom: 14px; }
+.popup-success{ display:none; background: var(--blue-dim); border: 1.5px solid var(--blue); padding: 16px 18px; font-size: 0.85rem; margin-top: 4px; }
+.popup-success.show{ display:block; }
+.popup-note{ font-size: 0.74rem; color: var(--ink-faint); margin-top: 14px; margin-bottom:0; }
+
+/* ---------- SPA section switching ---------- */
+.page-section{ display:none; }
+.page-section.active{ display:block; animation: sectionIn .4s ease; }
+@keyframes sectionIn{ from{ opacity:0; transform: translateY(10px); } to{ opacity:1; transform: translateY(0); } }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 980px){
+  .services-grid, .team-grid, .blog-grid, .values-grid, .pricing-grid{ grid-template-columns: repeat(2,1fr); }
+  .stat-strip{ grid-template-columns: repeat(2,1fr); }
+  .stat-strip .stat:nth-child(2){ border-right:none; }
+  .footer-grid{ grid-template-columns: 1fr 1fr; }
+  .two-col, .contact-grid, .blog-featured{ grid-template-columns: 1fr; }
+  .hero-top{ grid-template-columns: 1fr; }
+  .profile-photo{ max-width: 320px; }
+  .pricing-card.featured{ box-shadow:none; }
+  .index-row{ grid-template-columns: 40px 1fr 90px; }
+  .index-row .idx-desc, .index-row .idx-tags{ display:none; }
+  .timeline-row{ grid-template-columns: 60px 1fr; }
+  .timeline-row > div:last-child{ grid-column: 1 / -1; }
+}
+@media (max-width: 720px){
+  .nav-links, .nav-cta .btn-ghost{ display:none; }
+  .nav-toggle{ display:flex; }
+  .nav-links.open{
+    display:flex; flex-direction:column;
+    position:absolute; top:64px; left:0; right:0;
+    background: var(--bg); border-bottom:2px solid var(--ink);
+    padding: 20px 28px; gap:18px;
+  }
+  .services-grid, .team-grid, .blog-grid, .values-grid, .pricing-grid{ grid-template-columns: 1fr; }
+  .footer-grid{ grid-template-columns: 1fr; gap:28px; }
+  .stat-strip{ grid-template-columns: 1fr 1fr; }
+  .two-field{ grid-template-columns: 1fr; }
+  .cta-band{ padding: 60px 24px; }
+  .rail-card{ flex-basis: 300px; }
+}
+
+</style>
+</head>
+<body>
+
+<div class="popup-overlay" id="popup-overlay">
+  <div class="popup-modal">
+    <button class="popup-close" id="popup-close" aria-label="Close">✕</button>
+    <span class="popup-tag">Free — no obligation</span>
+    <h3>Get a Free Store Audit</h3>
+    <p>We'll review your Shopify or Webflow store and send back three concrete fixes for speed, conversion, and SEO — free, no strings attached.</p>
+    <form class="popup-form" id="popup-form">
+      <div class="form-row">
+        <label for="popup-name">Full name</label>
+        <input type="text" id="popup-name" name="name" placeholder="Jordan Reyes" required>
+      </div>
+      <div class="form-row">
+        <label for="popup-email">Email</label>
+        <input type="email" id="popup-email" name="email" placeholder="jordan@company.com" required>
+      </div>
+      <div class="form-row">
+        <label for="popup-url">Store or site URL</label>
+        <input type="text" id="popup-url" name="url" placeholder="yourstore.com">
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Claim my free audit →</button>
+      <div class="popup-success" id="popup-success"></div>
+      <p class="popup-note">This form doesn't send yet — connect it to your email or CRM to go live.</p>
+    </form>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <button data-goto="home" class="logo">
+      <img src="assets/logo-mark.svg" alt="Dynatrix Tech" class="brand-mark" width="34" height="34">
+    </button>
+    <nav class="nav-links">
+      <button data-goto="home">Home</button>
+      <button data-goto="services">Services</button>
+      <button data-goto="portfolio">Portfolio</button>
+      <button data-goto="about">About</button>
+      <button data-goto="reviews">Reviews</button>
+      <button data-goto="blog">Blog</button>
+      <button data-goto="contact">Contact</button>
+    </nav>
+    <div class="nav-cta">
+      <button data-goto="contact" class="btn btn-primary btn-sm">Start a project</button>
+      <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ HOME ============ -->
+<section id="home" class="page-section">
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-top">
+        <div>
+          <div class="eyebrow"><span class="num">/</span> Shopify — Webflow — SEO — Social</div>
+          <h1>We build the store.<br>Then we build <span class="mark-highlight">the traffic.</span></h1>
+          <p class="lede">Most agencies hand you off between departments. Dynatrix runs build and growth as one connected loop — so what we learn from your data feeds straight back into the site.</p>
+          <div class="hero-cta">
+            <button data-goto="contact" class="btn btn-primary">Start a project →</button>
+            <button data-goto="portfolio" class="btn btn-ghost">See the work</button>
+          </div>
+        </div>
+
+        <div class="profile-photo">
+          <!-- Replace this block with an <img> of your own photo, e.g.:
+               <img src="assets/your-photo.jpg" alt="Your Name"> -->
+          <div class="profile-photo-inner">
+            <span class="profile-photo-icon">+</span>
+            <span class="profile-photo-label">Add your photo here</span>
+          </div>
+          <div class="profile-photo-tag">Founder, Dynatrix Tech</div>
+        </div>
+      </div>
+
+      <div class="stat-strip">
+        <div class="stat">
+          <div class="stat-num"><span data-count="140" data-suffix="+">0</span></div>
+          <div class="stat-label">Projects shipped</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num"><span class="blue" data-count="63" data-suffix="%">0</span></div>
+          <div class="stat-label">Avg. traffic lift</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num"><span data-count="2.4" data-decimals="1" data-suffix="x">0</span></div>
+          <div class="stat-label">Conversion gain</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num"><span data-count="9" data-suffix="+">0</span></div>
+          <div class="stat-label">Years in operation</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="ticker-band">
+    <div class="ticker-track">
+      <span class="ticker-item">Shopify Development</span>
+      <span class="ticker-item">Webflow Design &amp; Dev</span>
+      <span class="ticker-item">SEO</span>
+      <span class="ticker-item">Social Media Marketing</span>
+      <span class="ticker-item">Email Marketing</span>
+      <span class="ticker-item">Social Media Management</span>
+      <span class="ticker-item">Shopify Development</span>
+      <span class="ticker-item">Webflow Design &amp; Dev</span>
+      <span class="ticker-item">SEO</span>
+      <span class="ticker-item">Social Media Marketing</span>
+      <span class="ticker-item">Email Marketing</span>
+      <span class="ticker-item">Social Media Management</span>
+    </div>
+  </div>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="section-head-row">
+        <div class="section-head">
+          <div class="eyebrow"><span class="num">01</span> What we do</div>
+          <h2>Core Services</h2>
+        </div>
+        <button data-goto="services" class="link-arrow">All services →</button>
+      </div>
+
+      <div class="index-list">
+        <div class="index-row">
+          <div class="idx-num">01</div>
+          <h3>Shopify Development</h3>
+          <p class="idx-desc">Custom themes and speed-first builds that hold up at scale.</p>
+          <div class="arrow-cta">→</div>
+        </div>
+        <div class="index-row">
+          <div class="idx-num">02</div>
+          <h3>Webflow Design &amp; Dev</h3>
+          <p class="idx-desc">Marketing sites your team can edit, built clean and CMS-driven.</p>
+          <div class="arrow-cta">→</div>
+        </div>
+        <div class="index-row">
+          <div class="idx-num">03</div>
+          <h3>SEO</h3>
+          <p class="idx-desc">Technical audits and content strategy built for organic revenue.</p>
+          <div class="arrow-cta">→</div>
+        </div>
+        <div class="index-row">
+          <div class="idx-num">04</div>
+          <h3>Social Media Marketing</h3>
+          <p class="idx-desc">Content systems and paid social that turn stores into channels.</p>
+          <div class="arrow-cta">→</div>
+        </div>
+        <div class="index-row">
+          <div class="idx-num">05</div>
+          <h3>Email Marketing</h3>
+          <p class="idx-desc">Flows and campaigns that turn subscribers into repeat buyers.</p>
+          <div class="arrow-cta">→</div>
+        </div>
+        <div class="index-row">
+          <div class="idx-num">06</div>
+          <h3>Social Media Management</h3>
+          <p class="idx-desc">Day-to-day posting, community replies, and a calendar that ships on time.</p>
+          <div class="arrow-cta">→</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight compare-section">
+    <div class="container">
+      <div class="section-head center">
+        <div class="eyebrow center"><span class="num">/</span> Why Dynatrix</div>
+        <h2>What you get vs.<br>a typical freelancer</h2>
+      </div>
+      <div class="compare-grid">
+        <div class="compare-col">
+          <div class="compare-head">Typical Freelancer</div>
+          <ul class="compare-list">
+            <li><span class="ic-x">✕</span> One person juggling every client</li>
+            <li><span class="ic-x">✕</span> Disappears after the site goes live</li>
+            <li><span class="ic-x">✕</span> No SEO or social — just the build</li>
+            <li><span class="ic-x">✕</span> Slow replies, unclear timelines</li>
+            <li><span class="ic-x">✕</span> No reporting, no accountability</li>
+          </ul>
+        </div>
+        <div class="compare-col compare-col-featured">
+          <div class="compare-head">Dynatrix Tech</div>
+          <ul class="compare-list">
+            <li><span class="ic-check">✓</span> A dedicated team across build, SEO &amp; social</li>
+            <li><span class="ic-check">✓</span> Ongoing growth after launch, not a one-off job</li>
+            <li><span class="ic-check">✓</span> Site, rankings, and social run as one system</li>
+            <li><span class="ic-check">✓</span> Clear timelines and a single point of contact</li>
+            <li><span class="ic-check">✓</span> Monthly plain-language reporting, every time</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="how-section">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow"><span class="num">02</span> How it works</div>
+        <h2>Three steps.<br>No wasted motion.</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-row">
+          <div class="t-num">01</div>
+          <div><h3>Tell us your goal</h3></div>
+          <div>
+            <p>No weeks wasted on endless calls. You share what you want to achieve — we cut straight to the plan that gets you there.</p>
+            <button data-goto="contact" class="btn btn-ghost btn-sm">Chat now</button>
+          </div>
+        </div>
+        <div class="timeline-row">
+          <div class="t-num">02</div>
+          <div><h3>We build the system</h3></div>
+          <div>
+            <p>We execute across every channel that drives real growth — store design, SEO, and social, all under one roof.</p>
+            <button data-goto="services" class="btn btn-ghost btn-sm">See how</button>
+          </div>
+        </div>
+        <div class="timeline-row">
+          <div class="t-num">03</div>
+          <div><h3>Watch the numbers move</h3></div>
+          <div>
+            <p>Transparent reporting, measurable outcomes, and a partner who stays accountable. No jargon — just results you can see.</p>
+            <button data-goto="portfolio" class="btn btn-ghost btn-sm">See results</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="section-head-row">
+        <div class="section-head">
+          <div class="eyebrow"><span class="num">03</span> Testimonials</div>
+          <h2>What clients say</h2>
+        </div>
+      </div>
+
+      <div class="rail-wrap">
+        <div class="rail">
+          <div class="rail-card">
+            <div class="stars">★★★★★</div>
+            <blockquote>"Dynatrix rebuilt our Shopify store in six weeks and our conversion rate hasn't dipped once since launch."</blockquote>
+            <div class="name">Dara Odesanya</div>
+            <div class="role">Founder, Northfield Roasters</div>
+          </div>
+          <div class="rail-card">
+            <div class="stars">★★★★★</div>
+            <blockquote>"The Webflow site finally lets our team update pages ourselves. No more waiting on a developer for a headline change."</blockquote>
+            <div class="name">Ren Whitaker</div>
+            <div class="role">Marketing Lead, Halcyon Studio</div>
+          </div>
+          <div class="rail-card">
+            <div class="stars">★★★★★</div>
+            <blockquote>"Their SEO work took us from page three to top three for our core category terms in under a year."</blockquote>
+            <div class="name">Sofia Marquez</div>
+            <div class="role">CMO, Basecamp Outfitters</div>
+          </div>
+          <div class="rail-card">
+            <div class="stars">★★★★★</div>
+            <blockquote>"We've worked with three agencies before Dynatrix. This is the first time build, SEO, and social felt like one plan."</blockquote>
+            <div class="name">Owen Blackwood</div>
+            <div class="role">Managing Partner, Lumen Legal</div>
+          </div>
+          <div class="rail-card">
+            <div class="stars">★★★★★</div>
+            <blockquote>"Fast, senior, and honest about timelines. They told us what wouldn't move the needle just as clearly as what would."</blockquote>
+            <div class="name">Priya Chandran</div>
+            <div class="role">Founder, Fernway Skincare</div>
+          </div>
+        </div>
+        <div class="rail-controls">
+          <button class="arrow-btn rail-prev" aria-label="Previous">←</button>
+          <button class="arrow-btn rail-next" aria-label="Next">→</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="section-head-row">
+        <div class="section-head">
+          <div class="eyebrow"><span class="num">04</span> Selected work</div>
+          <h2>Client Results</h2>
+        </div>
+        <button data-goto="portfolio" class="link-arrow">All work →</button>
+      </div>
+
+      <div class="index-list">
+        <div class="index-row">
+          <div class="idx-num">01</div>
+          <h3>Northfield Roasters</h3>
+          <p class="idx-desc">Full Shopify rebuild + SEO overhaul. +58% organic traffic.</p>
+          <div class="arrow-cta">→</div>
+        </div>
+        <div class="index-row">
+          <div class="idx-num">02</div>
+          <h3>Basecamp Outfitters</h3>
+          <p class="idx-desc">12-month SEO program. +112% organic revenue.</p>
+          <div class="arrow-cta">→</div>
+        </div>
+        <div class="index-row">
+          <div class="idx-num">03</div>
+          <h3>Halcyon Studio</h3>
+          <p class="idx-desc">Webflow rebrand + content system. 3x inbound leads.</p>
+          <div class="arrow-cta">→</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="section-head center">
+        <div class="eyebrow center"><span class="num">05</span> Packages</div>
+        <h2>Straightforward pricing</h2>
+        <p style="text-align:center; max-width:520px; margin:0 auto;">Every engagement starts with an audit call — these are starting points, not final quotes.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="card pricing-card">
+          <div class="plan-name">Starter</div>
+          <div class="price">$850<span> one-time</span></div>
+          <p class="plan-desc">A focused Shopify or Webflow build for brands just getting off the ground.</p>
+          <ul class="feature-list">
+            <li>Single-platform build (Shopify or Webflow)</li>
+            <li>Up to 6 pages / templates</li>
+            <li>Mobile-optimized &amp; speed-tuned</li>
+            <li>2 rounds of revisions</li>
+          </ul>
+          <button data-goto="contact" class="btn btn-ghost btn-block">Start with Starter</button>
+        </div>
+        <div class="card pricing-card featured">
+          <div class="badge">Most popular</div>
+          <div class="plan-name">Growth</div>
+          <div class="price">$2,200<span> + $400/mo</span></div>
+          <p class="plan-desc">Build plus ongoing SEO, email, and social — so growth doesn't stop at launch.</p>
+          <ul class="feature-list">
+            <li>Full Shopify or Webflow build</li>
+            <li>Monthly SEO &amp; email program</li>
+            <li>Social content calendar</li>
+            <li>Monthly reporting call</li>
+          </ul>
+          <button data-goto="contact" class="btn btn-primary btn-block">Start with Growth</button>
+        </div>
+        <div class="card pricing-card">
+          <div class="plan-name">Scale</div>
+          <div class="price">Custom<span> quoted</span></div>
+          <p class="plan-desc">For established brands running paid social, multi-market SEO, or complex builds.</p>
+          <ul class="feature-list">
+            <li>Custom Shopify/Webflow architecture</li>
+            <li>Paid social management</li>
+            <li>Dedicated senior team</li>
+            <li>Weekly reporting &amp; strategy</li>
+          </ul>
+          <button data-goto="contact" class="btn btn-ghost btn-block">Talk to us</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="section-head center">
+        <div class="eyebrow center"><span class="num">06</span> FAQ</div>
+        <h2>Questions we hear most</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item open">
+          <button class="faq-question"><span>How long does a typical project take?</span><span class="plus">+</span></button>
+          <div class="faq-answer"><p>A focused Shopify or Webflow build usually runs 4–8 weeks from kickoff to launch. Ongoing SEO and social work is scoped monthly — most clients stay on for 6–12 months to see full compounding results.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question"><span>Do you work with brands outside ecommerce?</span><span class="plus">+</span></button>
+          <div class="faq-answer"><p>Yes — Webflow, SEO, email, and social engagements regularly include service businesses, studios, and B2B brands. Shopify builds are naturally ecommerce-focused.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question"><span>What's included in the free audit?</span><span class="plus">+</span></button>
+          <div class="faq-answer"><p>A walkthrough of your store or site covering speed, conversion blockers, SEO gaps, and social presence — plus three concrete fixes you can act on immediately, no obligation to hire us.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question"><span>How do you report on results?</span><span class="plus">+</span></button>
+          <div class="faq-answer"><p>A monthly plain-language report covering traffic, conversion, and rankings — plus a live call to walk through it, not just a PDF dropped in your inbox.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="cta-band-inner">
+      <h2>Ready to grow<br>your store?</h2>
+      <p>Tell us about your business. We'll tell you exactly where to start.</p>
+      <div class="cta-buttons">
+        <button data-goto="contact" class="btn btn-amber">Book a free consultation →</button>
+      </div>
+    </div>
+  </section>
+
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section id="services" class="page-section">
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="eyebrow"><span class="num">/</span> What we offer</div>
+      <h1 style="max-width:800px;">Four services.<br>One system.</h1>
+      <p class="lede">Pick one, or run all four together — the site, the rankings, and the social presence stay in sync either way.</p>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container two-col">
+      <div>
+        <div class="eyebrow"><span class="num">01</span> Shopify</div>
+        <h2 style="text-transform:none; font-family:var(--body); font-size:1.8rem; font-weight:700;">Shopify Development</h2>
+        <p>Custom-coded themes and section-based builds that load fast, convert well, and don't fall apart the first time you add a new app.</p>
+        <div class="tag-row" style="margin-bottom:24px;">
+          <span class="tag">Custom themes</span><span class="tag">Migrations</span><span class="tag">Subscriptions</span><span class="tag">App integrations</span><span class="tag">Speed</span>
+        </div>
+        <button data-goto="contact" class="btn btn-primary">Get a Shopify quote →</button>
+      </div>
+      <div class="visual-block"><span class="mark-big">01</span></div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container two-col">
+      <div class="visual-block" style="order:1;"><span class="mark-big">02</span></div>
+      <div style="order:2;">
+        <div class="eyebrow"><span class="num">02</span> Webflow</div>
+        <h2 style="text-transform:none; font-family:var(--body); font-size:1.8rem; font-weight:700;">Webflow Design &amp; Development</h2>
+        <p>Marketing sites, landing pages, and content hubs your team can update without filing a ticket — built on clean CMS structure.</p>
+        <div class="tag-row" style="margin-bottom:24px;">
+          <span class="tag">Design systems</span><span class="tag">CMS</span><span class="tag">Micro-interactions</span><span class="tag">Landing pages</span>
+        </div>
+        <button data-goto="contact" class="btn btn-primary">Get a Webflow quote →</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container two-col">
+      <div>
+        <div class="eyebrow"><span class="num">03</span> SEO</div>
+        <h2 style="text-transform:none; font-family:var(--body); font-size:1.8rem; font-weight:700;">Search Engine Optimization</h2>
+        <p>Technical fixes, information architecture, and content built around what your buyers actually search — measured in revenue, not just rankings.</p>
+        <div class="tag-row" style="margin-bottom:24px;">
+          <span class="tag">Technical audits</span><span class="tag">Keyword strategy</span><span class="tag">Content</span><span class="tag">Link building</span>
+        </div>
+        <button data-goto="contact" class="btn btn-primary">Get an SEO audit →</button>
+      </div>
+      <div class="visual-block"><span class="mark-big">03</span></div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container two-col">
+      <div class="visual-block" style="order:1;"><span class="mark-big">04</span></div>
+      <div style="order:2;">
+        <div class="eyebrow"><span class="num">04</span> Social</div>
+        <h2 style="text-transform:none; font-family:var(--body); font-size:1.8rem; font-weight:700;">Social Media Marketing</h2>
+        <p>Content systems and paid social campaigns that turn a store into a channel people follow — and follow back to checkout.</p>
+        <div class="tag-row" style="margin-bottom:24px;">
+          <span class="tag">Content calendars</span><span class="tag">Short-form video</span><span class="tag">Paid social</span>
+        </div>
+        <button data-goto="contact" class="btn btn-primary">Get a social plan →</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container two-col">
+      <div>
+        <div class="eyebrow"><span class="num">05</span> Email</div>
+        <h2 style="text-transform:none; font-family:var(--body); font-size:1.8rem; font-weight:700;">Email Marketing</h2>
+        <p>Klaviyo flows and campaigns that turn one-time buyers into repeat customers — welcome series, abandoned cart, post-purchase, and everything in between.</p>
+        <div class="tag-row" style="margin-bottom:24px;">
+          <span class="tag">Klaviyo flows</span><span class="tag">Campaign design</span><span class="tag">Segmentation</span><span class="tag">A/B testing</span>
+        </div>
+        <button data-goto="contact" class="btn btn-primary">Get an email audit →</button>
+      </div>
+      <div class="visual-block"><span class="mark-big">05</span></div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container two-col">
+      <div class="visual-block" style="order:1;"><span class="mark-big">06</span></div>
+      <div style="order:2;">
+        <div class="eyebrow"><span class="num">06</span> Social</div>
+        <h2 style="text-transform:none; font-family:var(--body); font-size:1.8rem; font-weight:700;">Social Media Management</h2>
+        <p>The day-to-day work that paid strategy depends on — consistent posting, community replies, and a content calendar that actually ships on schedule.</p>
+        <div class="tag-row" style="margin-bottom:24px;">
+          <span class="tag">Content calendars</span><span class="tag">Community management</span><span class="tag">Scheduling</span><span class="tag">Monthly reporting</span>
+        </div>
+        <button data-goto="contact" class="btn btn-primary">Get a management plan →</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="how-section">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow"><span class="num">/</span> How we work</div>
+        <h2>Our process,<br>start to scale.</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-row">
+          <div class="t-num">01</div>
+          <div><h3>Audit</h3></div>
+          <div><p>We map your current site, rankings, and social presence to find the highest-leverage fixes.</p></div>
+        </div>
+        <div class="timeline-row">
+          <div class="t-num">02</div>
+          <div><h3>Build</h3></div>
+          <div><p>Design and development happen in weekly sprints with a live staging link you can watch grow.</p></div>
+        </div>
+        <div class="timeline-row">
+          <div class="t-num">03</div>
+          <div><h3>Launch &amp; Grow</h3></div>
+          <div><p>We handle QA and tracking at launch, then run SEO and social on a monthly cadence.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="section-head center">
+        <div class="eyebrow center"><span class="num">/</span> Pricing</div>
+        <h2>Straightforward packages</h2>
+        <p style="text-align:center; max-width:520px; margin:0 auto;">Every engagement starts with an audit call — these are starting points, not final quotes.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="card pricing-card">
+          <div class="plan-name">Starter</div>
+          <div class="price">$850<span> one-time</span></div>
+          <p class="plan-desc">A focused Shopify or Webflow build for brands just getting off the ground.</p>
+          <ul class="feature-list">
+            <li>Single-platform build (Shopify or Webflow)</li>
+            <li>Up to 6 pages / templates</li>
+            <li>Mobile-optimized &amp; speed-tuned</li>
+            <li>2 rounds of revisions</li>
+          </ul>
+          <button data-goto="contact" class="btn btn-ghost btn-block">Start with Starter</button>
+        </div>
+        <div class="card pricing-card featured">
+          <div class="badge">Most popular</div>
+          <div class="plan-name">Growth</div>
+          <div class="price">$2,200<span> + $400/mo</span></div>
+          <p class="plan-desc">Build plus ongoing SEO and social, so growth doesn't stop at launch.</p>
+          <ul class="feature-list">
+            <li>Full Shopify or Webflow build</li>
+            <li>Monthly SEO program</li>
+            <li>Social content calendar</li>
+            <li>Monthly reporting call</li>
+          </ul>
+          <button data-goto="contact" class="btn btn-primary btn-block">Start with Growth</button>
+        </div>
+        <div class="card pricing-card">
+          <div class="plan-name">Scale</div>
+          <div class="price">Custom<span> quoted</span></div>
+          <p class="plan-desc">For established brands running paid social, multi-market SEO, or complex builds.</p>
+          <ul class="feature-list">
+            <li>Custom Shopify/Webflow architecture</li>
+            <li>Paid social management</li>
+            <li>Dedicated senior team</li>
+            <li>Weekly reporting &amp; strategy</li>
+          </ul>
+          <button data-goto="contact" class="btn btn-ghost btn-block">Talk to us</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="cta-band-inner">
+      <h2>Not sure which<br>service you need?</h2>
+      <p>Tell us where the business is today — we'll recommend a starting point in one call, no sales deck required.</p>
+      <div class="cta-buttons">
+        <button data-goto="contact" class="btn btn-amber">Talk to us →</button>
+      </div>
+    </div>
+  </section>
+
+</section>
+
+<!-- ============ PORTFOLIO ============ -->
+<section id="portfolio" class="page-section">
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="eyebrow"><span class="num">/</span> Selected work</div>
+      <h1 style="max-width:800px;">Stores and sites<br>we've built and grown.</h1>
+      <p class="lede">A mix of Shopify rebuilds, Webflow launches, and the SEO and social work that followed.</p>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="filter-row">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="shopify">Shopify</button>
+        <button class="filter-btn" data-filter="webflow">Webflow</button>
+        <button class="filter-btn" data-filter="seo">SEO</button>
+        <button class="filter-btn" data-filter="social">Social</button>
+      </div>
+
+      <div class="index-list">
+        <div class="index-row" data-category="shopify">
+          <div class="idx-num">01</div>
+          <h3>Northfield Roasters</h3>
+          <p class="idx-desc">Full Shopify rebuild + SEO. +58% organic traffic, +31% AOV.</p>
+          <div class="idx-tags"><span class="tag">Shopify</span><span class="tag">SEO</span></div>
+        </div>
+        <div class="index-row" data-category="webflow">
+          <div class="idx-num">02</div>
+          <h3>Halcyon Studio</h3>
+          <p class="idx-desc">Webflow rebrand + content system. 3x inbound leads.</p>
+          <div class="idx-tags"><span class="tag">Webflow</span><span class="tag">Social</span></div>
+        </div>
+        <div class="index-row" data-category="shopify">
+          <div class="idx-num">03</div>
+          <h3>Fernway Skincare</h3>
+          <p class="idx-desc">Subscription-first build + paid social. 2.1x conversion.</p>
+          <div class="idx-tags"><span class="tag">Shopify</span><span class="tag">Social</span></div>
+        </div>
+        <div class="index-row" data-category="seo">
+          <div class="idx-num">04</div>
+          <h3>Basecamp Outfitters</h3>
+          <p class="idx-desc">12-month SEO program. +112% organic revenue.</p>
+          <div class="idx-tags"><span class="tag">SEO</span><span class="tag">Content</span></div>
+        </div>
+        <div class="index-row" data-category="webflow">
+          <div class="idx-num">05</div>
+          <h3>Lumen Legal</h3>
+          <p class="idx-desc">Webflow rebuild + resource library. +74% form submits.</p>
+          <div class="idx-tags"><span class="tag">Webflow</span><span class="tag">SEO</span></div>
+        </div>
+        <div class="index-row" data-category="social">
+          <div class="idx-num">06</div>
+          <h3>Marlowe &amp; Co.</h3>
+          <p class="idx-desc">Always-on content + paid social. 4.8x ROAS.</p>
+          <div class="idx-tags"><span class="tag">Social</span><span class="tag">Shopify</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="cta-band-inner">
+      <h2>Want results<br>like these?</h2>
+      <p>Tell us about your project — we'll walk you through what a similar engagement would look like.</p>
+      <div class="cta-buttons">
+        <button data-goto="contact" class="btn btn-amber">Start a project →</button>
+      </div>
+    </div>
+  </section>
+
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="page-section">
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="eyebrow"><span class="num">/</span> Our story</div>
+      <h1 style="max-width:800px;">Small on purpose.</h1>
+      <p class="lede">Dynatrix Tech started in 2017 as two freelancers trading Shopify builds and SEO retainers. Nine years on, we're still a tight team — because that's the only way build and growth stay this connected.</p>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container two-col">
+      <div class="visual-block"><span class="mark-big">DT</span></div>
+      <div>
+        <div class="eyebrow"><span class="num">/</span> Our mission</div>
+        <h2 style="text-transform:none; font-family:var(--body); font-size:1.8rem; font-weight:700;">Fewer handoffs. Better data. Faster decisions.</h2>
+        <p>Every agency says they're "full service." What that usually means is three separate teams who barely talk, working off three separate dashboards. We built Dynatrix the opposite way: one team, one shared view of your traffic, conversion, and content.</p>
+        <p>We work with a deliberately limited number of clients at a time, so the same senior people who scope your project are the ones building and running it.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="section-head center">
+        <div class="eyebrow center"><span class="num">/</span> What we believe</div>
+        <h2>How we work</h2>
+      </div>
+      <div class="values-grid">
+        <div class="card">
+          <div class="icon" style="width:42px;height:42px;background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--display);font-size:0.8rem;margin-bottom:20px;">01</div>
+          <h3>Ship, measure, revise</h3>
+          <p style="font-size:0.92rem; margin:0;">We don't treat launch day as the finish line — it's where the real data starts.</p>
+        </div>
+        <div class="card">
+          <div class="icon" style="width:42px;height:42px;background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--display);font-size:0.8rem;margin-bottom:20px;">02</div>
+          <h3>Plain-language reporting</h3>
+          <p style="font-size:0.92rem; margin:0;">If we can't explain a metric in one sentence, we don't report it.</p>
+        </div>
+        <div class="card">
+          <div class="icon" style="width:42px;height:42px;background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--display);font-size:0.8rem;margin-bottom:20px;">03</div>
+          <h3>Senior hands only</h3>
+          <p style="font-size:0.92rem; margin:0;">Every project is built by the people who scoped it — never handed to a trainee.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow"><span class="num">/</span> The team</div>
+        <h2>Who you'll work with</h2>
+      </div>
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="photo"></div>
+          <div class="name">Adaeze Okon</div>
+          <div class="role">Founder &amp; Shopify Lead</div>
+        </div>
+        <div class="team-card">
+          <div class="photo"></div>
+          <div class="name">Marcus Whitfield</div>
+          <div class="role">Webflow &amp; Design Lead</div>
+        </div>
+        <div class="team-card">
+          <div class="photo"></div>
+          <div class="name">Priya Nandakumar</div>
+          <div class="role">SEO Strategist</div>
+        </div>
+        <div class="team-card">
+          <div class="photo"></div>
+          <div class="name">Leo Fischer</div>
+          <div class="role">Social &amp; Content Lead</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="cta-band-inner">
+      <h2>Want to know<br>if we're a fit?</h2>
+      <p>A 30-minute call tells us both — no pitch deck, just a straight conversation about your goals.</p>
+      <div class="cta-buttons">
+        <button data-goto="contact" class="btn btn-amber">Book a call →</button>
+      </div>
+    </div>
+  </section>
+
+</section>
+
+<!-- ============ REVIEWS ============ -->
+<section id="reviews" class="page-section">
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="eyebrow"><span class="num">/</span> Client reviews</div>
+      <h1 style="max-width:800px;">Don't take<br>our word for it.</h1>
+      <p class="lede">A few words from founders and marketing leads we've worked with over the past few years.</p>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="rail-wrap">
+        <div class="rail">
+          <div class="rail-card">
+            <div class="stars">★★★★★</div>
+            <blockquote>"Dynatrix rebuilt our Shopify store in six weeks and our conversion rate hasn't dipped once since launch."</blockquote>
+            <div class="name">Dara Odesanya</div>
+            <div class="role">Founder, Northfield Roasters</div>
+          </div>
+          <div class="rail-card">
+            <div class="stars">★★★★★</div>
+            <blockquote>"The Webflow site finally lets our team update pages ourselves. No more waiting on a developer."</blockquote>
+            <div class="name">Ren Whitaker</div>
+            <div class="role">Marketing Lead, Halcyon Studio</div>
+          </div>
+          <div class="rail-card">
+            <div class="stars">★★★★★</div>
+            <blockquote>"Their SEO work took us from page three to top three for our core category terms in under a year."</blockquote>
+            <div class="name">Sofia Marquez</div>
+            <div class="role">CMO, Basecamp Outfitters</div>
+          </div>
+          <div class="rail-card">
+            <div class="stars">★★★★★</div>
+            <blockquote>"The social content calendar alone was worth the retainer. Consistent posting finally happened."</blockquote>
+            <div class="name">Theo Aldrich</div>
+            <div class="role">Owner, Marlowe &amp; Co.</div>
+          </div>
+          <div class="rail-card">
+            <div class="stars">★★★★★</div>
+            <blockquote>"Fast, senior, and honest about timelines. They told us what wouldn't move the needle too."</blockquote>
+            <div class="name">Priya Chandran</div>
+            <div class="role">Founder, Fernway Skincare</div>
+          </div>
+          <div class="rail-card">
+            <div class="stars">★★★★★</div>
+            <blockquote>"We've worked with three agencies before Dynatrix. This is the first time it felt like one plan."</blockquote>
+            <div class="name">Owen Blackwood</div>
+            <div class="role">Managing Partner, Lumen Legal</div>
+          </div>
+        </div>
+        <div class="rail-controls">
+          <button class="arrow-btn rail-prev" aria-label="Previous">←</button>
+          <button class="arrow-btn rail-next" aria-label="Next">→</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="cta-band-inner">
+      <h2>Ready to be<br>our next review?</h2>
+      <p>Book a free teardown call and let's find out if we're the right fit for your project.</p>
+      <div class="cta-buttons">
+        <button data-goto="contact" class="btn btn-amber">Book a call →</button>
+      </div>
+    </div>
+  </section>
+
+</section>
+
+<!-- ============ BLOG ============ -->
+<section id="blog" class="page-section">
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="eyebrow"><span class="num">/</span> Notes &amp; guides</div>
+      <h1 style="max-width:800px;">Field notes on<br>growing online stores.</h1>
+      <p class="lede">What we're learning from client work — Shopify, Webflow, SEO, and social, written plainly.</p>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+
+      <div class="blog-featured">
+        <div class="thumb" style="background:var(--surface-alt); display:flex; align-items:center; justify-content:center;"><span class="mark-big">01</span></div>
+        <div>
+          <span class="cat">Shopify</span>
+          <h2 style="text-transform:none; font-family:var(--body); font-size:1.5rem; font-weight:700; margin-bottom:14px;">Why your Shopify speed score is lying to you</h2>
+          <p>A high Lighthouse score doesn't always mean a fast checkout. Here's what we actually measure before calling a store "fast" — and the three fixes that move real conversion, not just the score.</p>
+          <span class="btn btn-ghost" style="cursor:default;">Read the article →</span>
+          <div class="meta" style="margin-top:20px; font-size:0.8rem; color:var(--ink-faint);">By Adaeze Okon · 7 min read</div>
+        </div>
+      </div>
+
+      <div class="filter-row">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="shopify">Shopify</button>
+        <button class="filter-btn" data-filter="webflow">Webflow</button>
+        <button class="filter-btn" data-filter="seo">SEO</button>
+        <button class="filter-btn" data-filter="social">Social</button>
+      </div>
+
+      <div class="blog-grid">
+
+        <div class="card blog-card" data-category="webflow">
+          <div class="thumb" style="background:var(--surface-alt); display:flex; align-items:center; justify-content:center;"><span class="mark-big" style="font-size:1.6rem;">02</span></div>
+          <span class="cat">Webflow</span>
+          <h3>CMS collections vs. static pages: when to use each</h3>
+          <p style="font-size:0.9rem; margin:0;">A practical framework for deciding what belongs in Webflow's CMS.</p>
+          <div class="meta" style="font-size:0.8rem; color:var(--ink-faint); margin-top:16px;">By Marcus Whitfield · 5 min read</div>
+        </div>
+
+        <div class="card blog-card" data-category="seo">
+          <div class="thumb" style="background:var(--surface-alt); display:flex; align-items:center; justify-content:center;"><span class="mark-big" style="font-size:1.6rem;">03</span></div>
+          <span class="cat">SEO</span>
+          <h3>The technical SEO audit we run on every new client</h3>
+          <p style="font-size:0.9rem; margin:0;">The exact checklist we use in week one, from crawl budget to canonical tags.</p>
+          <div class="meta" style="font-size:0.8rem; color:var(--ink-faint); margin-top:16px;">By Priya Nandakumar · 9 min read</div>
+        </div>
+
+        <div class="card blog-card" data-category="social">
+          <div class="thumb" style="background:var(--surface-alt); display:flex; align-items:center; justify-content:center;"><span class="mark-big" style="font-size:1.6rem;">04</span></div>
+          <span class="cat">Social</span>
+          <h3>Building a content calendar you'll actually stick to</h3>
+          <p style="font-size:0.9rem; margin:0;">Why most calendars fail after month two — and the simpler system that replaces them.</p>
+          <div class="meta" style="font-size:0.8rem; color:var(--ink-faint); margin-top:16px;">By Leo Fischer · 6 min read</div>
+        </div>
+
+        <div class="card blog-card" data-category="shopify">
+          <div class="thumb" style="background:var(--surface-alt); display:flex; align-items:center; justify-content:center;"><span class="mark-big" style="font-size:1.6rem;">05</span></div>
+          <span class="cat">Shopify</span>
+          <h3>Subscriptions on Shopify: what we wish clients knew earlier</h3>
+          <p style="font-size:0.9rem; margin:0;">Common pitfalls when adding subscriptions to an existing store.</p>
+          <div class="meta" style="font-size:0.8rem; color:var(--ink-faint); margin-top:16px;">By Adaeze Okon · 8 min read</div>
+        </div>
+
+        <div class="card blog-card" data-category="seo">
+          <div class="thumb" style="background:var(--surface-alt); display:flex; align-items:center; justify-content:center;"><span class="mark-big" style="font-size:1.6rem;">06</span></div>
+          <span class="cat">SEO</span>
+          <h3>Why we stopped chasing rankings and started chasing revenue</h3>
+          <p style="font-size:0.9rem; margin:0;">A rethink of what "SEO success" should actually mean for an ecommerce brand.</p>
+          <div class="meta" style="font-size:0.8rem; color:var(--ink-faint); margin-top:16px;">By Priya Nandakumar · 6 min read</div>
+        </div>
+
+        <div class="card blog-card" data-category="webflow">
+          <div class="thumb" style="background:var(--surface-alt); display:flex; align-items:center; justify-content:center;"><span class="mark-big" style="font-size:1.6rem;">07</span></div>
+          <span class="cat">Webflow</span>
+          <h3>Five Webflow interactions that actually help conversion</h3>
+          <p style="font-size:0.9rem; margin:0;">And the ones that just slow your page down for no real benefit.</p>
+          <div class="meta" style="font-size:0.8rem; color:var(--ink-faint); margin-top:16px;">By Marcus Whitfield · 5 min read</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="cta-band-inner">
+      <h2>Want notes like<br>these in your inbox?</h2>
+      <p>One email a month — no fluff, just what we're learning from active client work.</p>
+      <div class="cta-buttons">
+        <button data-goto="contact" class="btn btn-amber">Subscribe →</button>
+      </div>
+    </div>
+  </section>
+
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="page-section">
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="eyebrow"><span class="num">/</span> Let's talk</div>
+      <h1 style="max-width:800px;">Tell us about<br>your project.</h1>
+      <p class="lede">Fill out the form or email us directly — we reply to every message within one business day.</p>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container contact-grid">
+
+      <div>
+        <form id="contact-form">
+          <div class="two-field">
+            <div class="form-row">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" placeholder="Jordan Reyes" required>
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="jordan@company.com" required>
+            </div>
+          </div>
+          <div class="two-field">
+            <div class="form-row">
+              <label for="company">Company</label>
+              <input type="text" id="company" name="company" placeholder="Company name">
+            </div>
+            <div class="form-row">
+              <label for="service">Service you need</label>
+              <select id="service" name="service">
+                <option>Shopify Development</option>
+                <option>Webflow Design &amp; Dev</option>
+                <option>SEO</option>
+                <option>Social Media Marketing</option>
+                <option>Email Marketing</option>
+                <option>Social Media Management</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="budget">Approximate budget</label>
+            <select id="budget" name="budget">
+              <option>Under $3,000</option>
+              <option>$3,000 – $8,000</option>
+              <option>$8,000 – $20,000</option>
+              <option>$20,000+</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="message">Project details</label>
+            <textarea id="message" name="message" placeholder="Tell us a bit about what you're working on..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Send message →</button>
+          <div class="form-success" id="form-success"></div>
+          <p class="form-note">This form doesn't send yet — connect it to your email or CRM to go live.</p>
+        </form>
+      </div>
+
+      <div>
+        <div class="contact-info-card">
+          <div class="ic">@</div>
+          <div>
+            <h3 style="margin-bottom:4px; font-size:1rem;">Email</h3>
+            <p style="margin:0; font-size:0.92rem;"><a href="mailto:hello@dynatrixtech.com" style="color:var(--ink-dim);">hello@dynatrixtech.com</a></p>
+          </div>
+        </div>
+        <div class="contact-info-card">
+          <div class="ic">#</div>
+          <div>
+            <h3 style="margin-bottom:4px; font-size:1rem;">Phone</h3>
+            <p style="margin:0; font-size:0.92rem;">+1 (555) 013-2847</p>
+          </div>
+        </div>
+        <div class="contact-info-card">
+          <div class="ic">→</div>
+          <div>
+            <h3 style="margin-bottom:4px; font-size:1rem;">Response time</h3>
+            <p style="margin:0; font-size:0.92rem;">We reply within one business day, Monday–Friday.</p>
+          </div>
+        </div>
+        <div class="contact-info-card">
+          <div class="ic">*</div>
+          <div>
+            <h3 style="margin-bottom:4px; font-size:1rem;">Social</h3>
+            <p style="margin:0; font-size:0.92rem;">
+              <span style="color:var(--ink-dim);">Instagram</span> ·
+              <span style="color:var(--ink-dim);">LinkedIn</span> ·
+              <span style="color:var(--ink-dim);">X / Twitter</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="visual-block" style="margin-top:30px; min-height:200px;">
+          <span class="mark-big" style="font-size:2rem;">DT</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="section-head center">
+        <div class="eyebrow center"><span class="num">/</span> FAQ</div>
+        <h2>Questions we hear most</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item open">
+          <button class="faq-question"><span>How long does a typical project take?</span><span class="plus">+</span></button>
+          <div class="faq-answer"><p>A focused Shopify or Webflow build usually runs 4–8 weeks from kickoff to launch. Ongoing SEO and social work is scoped monthly and has no fixed end date — most clients stay on for 6–12 months to see full compounding results.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question"><span>Do you work with brands outside ecommerce?</span><span class="plus">+</span></button>
+          <div class="faq-answer"><p>Yes — Webflow, SEO, and social engagements regularly include service businesses, studios, and B2B brands. Shopify builds are naturally ecommerce-focused.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question"><span>Can you take over an existing site instead of rebuilding it?</span><span class="plus">+</span></button>
+          <div class="faq-answer"><p>Often, yes. We start with an audit to see whether the existing foundation is worth building on or whether a rebuild will actually be faster and cheaper long-term — we'll tell you honestly either way.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question"><span>What do you need from us to get started?</span><span class="plus">+</span></button>
+          <div class="faq-answer"><p>Brand assets (logo, fonts, product photography if you have it), access to your current platform if applicable, and about an hour of your time for the kickoff call. We handle the rest.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question"><span>How do you report on results?</span><span class="plus">+</span></button>
+          <div class="faq-answer"><p>A monthly plain-language report covering traffic, conversion, and rankings — plus a live call to walk through it, not just a PDF dropped in your inbox.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="assets/logo-mark.svg" alt="Dynatrix Tech" class="brand-mark" width="38" height="38" loading="lazy">
+          Dynatrix<span class="dim">/Tech</span>
+        </div>
+        <p style="margin-top:10px; max-width:260px; font-size:0.9rem;">The build-and-growth studio for Shopify and Webflow brands.</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li><button data-goto="about">About</button></li>
+          <li><button data-goto="services">Services</button></li>
+          <li><button data-goto="portfolio">Portfolio</button></li>
+          <li><button data-goto="contact">Contact</button></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <ul>
+          <li><a href="mailto:hello@dynatrixtech.com">hello@dynatrixtech.com</a></li>
+          <li><button data-goto="contact">WhatsApp</button></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Dynatrix Tech. All rights reserved.</span>
+      <span>Shopify · Webflow · SEO · Social</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Dynatrix Tech — single-page app behavior
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  // ---------- Section switching ----------
+  const sections = document.querySelectorAll('.page-section');
+  const navLinks = document.querySelectorAll('[data-goto]');
+
+  function showSection(id){
+    sections.forEach(s => s.classList.toggle('active', s.id === id));
+    navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('data-goto') === id));
+    document.querySelectorAll('.nav-links').forEach(nl => nl.classList.remove('open'));
+    window.scrollTo({ top: 0, behavior: 'instant' in window ? 'instant' : 'auto' });
+    initReveal(document.getElementById(id));
+    initCounters(document.getElementById(id));
+  }
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const target = link.getAttribute('data-goto');
+      if(target) showSection(target);
+    });
+  });
+
+  showSection('home');
+
+  // ---------- Mobile nav toggle ----------
+  const toggle = document.querySelector('.nav-toggle');
+  const links = document.querySelector('.nav-links');
+  if(toggle && links){
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+  }
+
+  // ---------- Animated stat counters ----------
+  function animateCount(el){
+    if(el.dataset.counted) return;
+    el.dataset.counted = 'true';
+    const target = parseFloat(el.getAttribute('data-count'));
+    const suffix = el.getAttribute('data-suffix') || '';
+    const decimals = el.getAttribute('data-decimals') ? parseInt(el.getAttribute('data-decimals')) : 0;
+    const duration = 1400;
+    const startTime = performance.now();
+    const step = (now) => {
+      const progress = Math.min((now - startTime) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      const value = target * eased;
+      el.textContent = value.toFixed(decimals) + suffix;
+      if(progress < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  }
+  function initCounters(scope){
+    if(!scope) return;
+    scope.querySelectorAll('[data-count]').forEach(el => animateCount(el));
+  }
+
+  // ---------- Scroll reveal ----------
+  function initReveal(scope){
+    if(!scope) return;
+    const els = scope.querySelectorAll('.card:not([data-revealed]), .section-head:not([data-revealed]), .blog-featured:not([data-revealed])');
+    els.forEach(el => {
+      el.dataset.revealed = 'true';
+      el.style.opacity = 1;
+      el.style.transform = 'translateY(0)';
+      el.style.transition = 'opacity .5s ease, transform .5s ease';
+    });
+  }
+
+  // ---------- Portfolio / blog filter tabs ----------
+  document.querySelectorAll('.filter-row').forEach(row => {
+    const btns = row.querySelectorAll('.filter-btn');
+    const scopeItems = row.parentElement.querySelectorAll('[data-category]');
+    btns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        btns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.getAttribute('data-filter');
+        scopeItems.forEach(item => {
+          const show = filter === 'all' || item.getAttribute('data-category') === filter;
+          item.style.display = show ? '' : 'none';
+        });
+      });
+    });
+  });
+
+  // ---------- Testimonial rail (horizontal scroll) ----------
+  document.querySelectorAll('.rail-wrap').forEach(wrap => {
+    const rail = wrap.querySelector('.rail');
+    const prevBtn = wrap.querySelector('.rail-prev');
+    const nextBtn = wrap.querySelector('.rail-next');
+    if(!rail) return;
+    function cardWidth(){
+      const card = rail.querySelector('.rail-card');
+      return card ? card.getBoundingClientRect().width + 20 : 380;
+    }
+    if(nextBtn) nextBtn.addEventListener('click', () => rail.scrollBy({ left: cardWidth(), behavior: 'smooth' }));
+    if(prevBtn) prevBtn.addEventListener('click', () => rail.scrollBy({ left: -cardWidth(), behavior: 'smooth' }));
+  });
+
+  // ---------- FAQ accordion ----------
+  document.querySelectorAll('.faq-item').forEach(item => {
+    const question = item.querySelector('.faq-question');
+    const answer = item.querySelector('.faq-answer');
+    if(!question || !answer) return;
+    question.addEventListener('click', () => {
+      const isOpen = item.classList.contains('open');
+      item.parentElement.querySelectorAll('.faq-item.open').forEach(other => {
+        if(other !== item){
+          other.classList.remove('open');
+          other.querySelector('.faq-answer').style.maxHeight = null;
+        }
+      });
+      if(isOpen){
+        item.classList.remove('open');
+        answer.style.maxHeight = null;
+      } else {
+        item.classList.add('open');
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+      }
+    });
+  });
+
+  // ---------- Popup modal (free audit offer) ----------
+  const popupOverlay = document.getElementById('popup-overlay');
+  const popupClose = document.getElementById('popup-close');
+  const popupForm = document.getElementById('popup-form');
+
+  function openPopup(){
+    if(popupOverlay) popupOverlay.classList.add('show');
+  }
+  function closePopup(){
+    if(popupOverlay) popupOverlay.classList.remove('show');
+  }
+
+  if(popupOverlay){
+    if(!sessionStorage.getItem('dynatrixAuditPopupShown')){
+      setTimeout(() => {
+        openPopup();
+        sessionStorage.setItem('dynatrixAuditPopupShown', 'true');
+      }, 6000);
+    }
+    if(popupClose) popupClose.addEventListener('click', closePopup);
+    popupOverlay.addEventListener('click', (e) => {
+      if(e.target === popupOverlay) closePopup();
+    });
+    document.addEventListener('keydown', (e) => {
+      if(e.key === 'Escape') closePopup();
+    });
+  }
+  if(popupForm){
+    popupForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const success = document.getElementById('popup-success');
+      if(success){
+        success.classList.add('show');
+        success.textContent = "Request received — we'll send your audit within 2 business days.";
+      }
+      popupForm.reset();
+      setTimeout(closePopup, 2200);
+    });
+  }
+
+  // ---------- Contact form ----------
+  const form = document.getElementById('contact-form');
+  if(form){
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const success = document.getElementById('form-success');
+      if(success){
+        success.classList.add('show');
+        success.textContent = "Message received — we'll reply within one business day.";
+      }
+      form.reset();
+    });
+  }
+
+});
+
+</script>
+</body>
+</html>
