@@ -1,8 +1,0 @@
-<svg width="437" height="106" viewBox="0 0 437 106" xmlns="http://www.w3.org/2000/svg">
-  <g transform="translate(24, 15)">
-    <rect x="6" y="54" width="20" height="30" rx="2" fill="#0A0A0A"/>
-    <rect x="34" y="38" width="20" height="46" rx="2" fill="#0A0A0A"/>
-    <path d="M62,84 L62,22 L78,22 L94,8 L94,84 Z" fill="#2440FF"/>
-  </g>
-  <text x="132" y="66" font-family="Arial Black, Arial, Helvetica, sans-serif" font-weight="900" font-size="34" letter-spacing="-0.5" fill="#0A0A0A">DYNATRIX<tspan fill="#2440FF">/TECH</tspan></text>
-</svg>
