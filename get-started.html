@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get Started — Dynatrix Tech</title>
+<meta name="description" content="Tell us about your project — no payment, no commitment, just the details we need for your audit call.">
+
+<!-- Favicon -->
+<link rel="shortcut icon" href="assets/favicon.ico">
+
+<!-- Open Graph / Social -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Get Started — Dynatrix Tech">
+<meta property="og:description" content="Tell us about your project — no payment, no commitment, just the details we need for your audit call.">
+<meta property="og:image" content="https://dynatrixtech.com/assets/og-image.png">
+<meta property="og:url" content="https://dynatrixtech.com/get-started.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Get Started — Dynatrix Tech">
+<meta name="twitter:description" content="Tell us about your project — no payment, no commitment, just the details we need for your audit call.">
+<meta name="twitter:image" content="https://dynatrixtech.com/assets/og-image.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="get-started">
+
+<div class="popup-overlay" id="popup-overlay">
+<div class="popup-modal">
+<button aria-label="Close" class="popup-close" id="popup-close">✕</button>
+<span class="popup-tag">Free — no obligation</span>
+<h3>Get a Free Store Audit</h3>
+<p>We'll review your Shopify or Webflow store and send back three concrete fixes for speed, conversion, and SEO — free, no strings attached.</p>
+<form class="popup-form" id="popup-form">
+<div class="form-row">
+<label for="popup-name">Full name</label>
+<input id="popup-name" name="name" placeholder="Jordan Reyes" required="" type="text"/>
+</div>
+<div class="form-row">
+<label for="popup-email">Email</label>
+<input id="popup-email" name="email" placeholder="jordan@company.com" required="" type="email"/>
+</div>
+<div class="form-row">
+<label for="popup-url">Store or site URL</label>
+<input id="popup-url" name="url" placeholder="yourstore.com" type="text"/>
+</div>
+<button class="btn btn-primary btn-block" type="submit">Claim my free audit →</button>
+<div class="popup-success" id="popup-success"></div>
+<p class="popup-note">This form doesn't send yet — connect it to your email or CRM to go live.</p>
+</form>
+</div>
+</div>
+
+<header class="site-header">
+<div class="nav-wrap">
+<a class="logo" href="index.html">
+<img alt="Dynatrix Tech" class="brand-mark" height="34" src="assets/logo.svg" width="34"/>
+</a>
+<nav class="nav-links">
+<a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="portfolio.html">Portfolio</a>
+<a href="about.html">About</a>
+<a href="reviews.html">Reviews</a>
+<a href="blog.html">Blog</a>
+<a href="contact.html">Contact</a>
+</nav>
+<div class="nav-cta">
+<a class="btn btn-primary btn-sm" href="contact.html">Start a project</a>
+<button aria-label="Menu" class="nav-toggle"><span></span><span></span><span></span></button>
+</div>
+</div>
+</header>
+
+<main>
+<section class="page-hero">
+<div class="container">
+<div class="eyebrow"><span class="num">/</span> Get started</div>
+<h1 style="max-width:800px;">Tell us about<br/>your project.</h1>
+<p class="lede">No payment, no commitment — just the details we need so your audit call actually saves you time.</p>
+</div>
+</section>
+<section class="section-tight">
+<div class="container get-started-grid">
+<div>
+<form id="get-started-form">
+<div class="two-field">
+<div class="form-row">
+<label for="gs-name">Full name</label>
+<input id="gs-name" name="name" placeholder="Jordan Reyes" required="" type="text"/>
+</div>
+<div class="form-row">
+<label for="gs-email">Email</label>
+<input id="gs-email" name="email" placeholder="jordan@company.com" required="" type="email"/>
+</div>
+</div>
+<div class="two-field">
+<div class="form-row">
+<label for="gs-company">Company / brand name</label>
+<input id="gs-company" name="company" placeholder="Your Brand Co." type="text"/>
+</div>
+<div class="form-row">
+<label for="gs-website">Current website (if any)</label>
+<input id="gs-website" name="website" placeholder="yourbrand.com" type="text"/>
+</div>
+</div>
+<div class="form-row">
+<label>What do you need most right now?</label>
+<div class="chip-row" id="gs-need-chips">
+<div class="chip" data-need="Shopify build">Shopify build</div>
+<div class="chip" data-need="Webflow site">Webflow site</div>
+<div class="chip" data-need="SEO">SEO</div>
+<div class="chip" data-need="Email marketing">Email marketing</div>
+<div class="chip" data-need="Social">Social</div>
+<div class="chip" data-need="Not sure yet">Not sure yet</div>
+</div>
+</div>
+<div class="form-row">
+<label for="gs-message">Tell us a bit more (optional)</label>
+<textarea id="gs-message" name="message" placeholder="What's the goal, timeline, or anything else worth knowing before the call?"></textarea>
+</div>
+<button class="btn btn-primary btn-block" type="submit">Send project details →</button>
+<div class="form-success" id="gs-form-success"></div>
+<p class="form-note">This form doesn't send yet — connect it to your email or CRM to go live.</p>
+</form>
+</div>
+<div class="gs-summary">
+<div class="gs-summary-head">Your plan</div>
+<div class="gs-plan-select">
+<select id="gs-plan-select">
+<option value="starter">Starter</option>
+<option selected="" value="growth">Growth</option>
+<option value="scale">Scale</option>
+</select>
+</div>
+<ul class="gs-feature-list" id="gs-feature-list"></ul>
+<div class="gs-line">
+<span class="label" id="gs-price-label">Starting price</span>
+<span class="amt" id="gs-price-amt">$2,200</span>
+</div>
+<div class="gs-line" id="gs-ongoing-line">
+<span class="label">Ongoing (from month 2)</span>
+<span class="amt" id="gs-ongoing-amt">$400/mo</span>
+</div>
+<div class="gs-total">
+<div>
+<span class="t-label">Estimated starting price</span>
+<span class="t-sub">Final scope confirmed on your audit call</span>
+</div>
+<span class="t-amt" id="gs-total-amt">$2,200</span>
+</div>
+<div class="gs-trust"><span class="dot"></span> No card required to get started</div>
+<div class="gs-note">
+<strong>Why no checkout?</strong> Every engagement starts with a short audit call so pricing reflects your actual scope — not a generic package.
+        </div>
+</div>
+</div>
+</section>
+</main>
+
+<footer class="site-footer">
+<div class="container">
+<div class="footer-grid">
+<div>
+<div class="footer-brand">
+<img alt="Dynatrix Tech" class="brand-mark" height="38" loading="lazy" src="assets/logo.svg" width="38"/>
+          Dynatrix<span class="dim">/Tech</span>
+</div>
+<p style="margin-top:10px; max-width:260px; font-size:0.9rem;">The build-and-growth studio for Shopify and Webflow brands.</p>
+</div>
+<div>
+<h4>Navigation</h4>
+<ul>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="portfolio.html">Portfolio</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4>Get in touch</h4>
+<ul>
+<li><a href="mailto:hello@dynatrixtech.com">hello@dynatrixtech.com</a></li>
+<li><a href="contact.html">WhatsApp</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<span>© 2026 Dynatrix Tech. All rights reserved.</span>
+<div class="footer-legal">
+<a href="privacy-policy.html">Privacy Policy</a>
+<a href="terms.html">Terms of Service</a>
+<a href="sitemap.html">Sitemap</a>
+</div>
+<span>Shopify · Webflow · SEO · Social</span>
+</div>
+</div>
+</footer>
+
+<script src="script.js"></script>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6a88451df23b8e344b48678e/1k0i4rv8b';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+</body>
+</html>
