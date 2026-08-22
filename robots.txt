@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://dynatrixtech.com/sitemap.xml
+Sitemap: https://dynatrix-tech.github.io/dynatrix-tech/sitemap.xml
