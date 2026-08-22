@@ -242,6 +242,13 @@ section{ padding: 100px 0; }
 .hero-cta{ display:flex; gap:16px; margin-top: 32px; flex-wrap: wrap; }
 
 .profile-photo{ position:relative; }
+.profile-photo::before{
+  content:"";
+  position:absolute;
+  top:16px; left:16px; width:100%; height:100%;
+  background: var(--blue);
+  z-index:0;
+}
 .profile-photo-inner{
   border: 2px dashed #CBCBC4;
   aspect-ratio: 4 / 5;
@@ -249,6 +256,12 @@ section{ padding: 100px 0; }
   background: var(--surface-alt);
   display:flex; flex-direction:column; align-items:center; justify-content:center;
   gap: 14px;
+}
+.profile-photo img{
+  width:100%; aspect-ratio: 4 / 5; min-height: 340px;
+  object-fit: cover; object-position: top center;
+  border: 2px solid var(--ink); display:block;
+  position:relative; z-index:1;
 }
 .profile-photo-icon{
   width: 46px; height:46px; border: 2px solid var(--ink-faint);
@@ -259,10 +272,22 @@ section{ padding: 100px 0; }
   font-size: 0.78rem; font-weight:700; text-transform:uppercase; letter-spacing:.04em; color: var(--ink-faint);
 }
 .profile-photo-tag{
-  position:absolute; bottom:14px; left:14px;
-  background: var(--blue); color:#fff;
-  font-size: 0.72rem; font-weight:700; text-transform:uppercase; letter-spacing:.04em;
-  padding: 8px 14px;
+  position:absolute; bottom:14px; left:14px; right:14px; z-index:2;
+  background: #fff; color: var(--ink);
+  border: 2px solid var(--ink); border-radius: var(--radius);
+  padding: 10px 14px;
+  display:flex; align-items:center; gap:10px;
+  box-shadow: 3px 3px 0 rgba(10,10,10,0.15);
+}
+.profile-photo-tag .dot{
+  width:9px; height:9px; border-radius:50%; background: var(--blue); flex-shrink:0;
+}
+.profile-photo-tag .tag-text{ line-height:1.3; }
+.profile-photo-tag .tag-title{
+  font-size: 0.78rem; font-weight:700; text-transform:uppercase; letter-spacing:.03em; display:block;
+}
+.profile-photo-tag .tag-sub{
+  font-size: 0.72rem; color: var(--ink-dim); display:block; margin-top:1px;
 }
 
 .stat-strip{
