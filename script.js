@@ -1,5 +1,72 @@
 // Dynatrix Tech — multi-page site behavior
 
+// ---------- Cookie consent + deferred analytics/chat loading ----------
+// Runs immediately (outside DOMContentLoaded) so consent decisions apply
+// before the rest of the page's scripts run.
+(function () {
+  const GA_ID = 'G-CMMXWDJ8JH';
+  const TAWK_SRC = 'https://embed.tawk.to/6a88451df23b8e344b48678e/1k0i4rv8b';
+  const STORAGE_KEY = 'dynatrixCookieConsent'; // 'accepted' | 'rejected'
+
+  function loadAnalytics() {
+    const s = document.createElement('script');
+    s.async = true;
+    s.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
+    document.head.appendChild(s);
+    gtag('js', new Date());
+    gtag('config', GA_ID);
+  }
+
+  function loadChatWidget() {
+    var Tawk_API = window.Tawk_API || {};
+    window.Tawk_API = Tawk_API;
+    window.Tawk_LoadStart = new Date();
+    const s1 = document.createElement('script');
+    const s0 = document.getElementsByTagName('script')[0];
+    s1.async = true;
+    s1.src = TAWK_SRC;
+    s1.charset = 'UTF-8';
+    s1.setAttribute('crossorigin', '*');
+    s0.parentNode.insertBefore(s1, s0);
+  }
+
+  function enableTracking() {
+    loadAnalytics();
+    loadChatWidget();
+  }
+
+  const consent = localStorage.getItem(STORAGE_KEY);
+  if (consent === 'accepted') {
+    enableTracking();
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const banner = document.getElementById('cookie-banner');
+    const acceptBtn = document.getElementById('cookie-accept');
+    const rejectBtn = document.getElementById('cookie-reject');
+    if (!banner) return;
+
+    if (!consent) {
+      // No decision yet this browser — show the banner
+      setTimeout(() => banner.classList.add('show'), 400);
+    }
+
+    if (acceptBtn) {
+      acceptBtn.addEventListener('click', () => {
+        localStorage.setItem(STORAGE_KEY, 'accepted');
+        banner.classList.remove('show');
+        enableTracking();
+      });
+    }
+    if (rejectBtn) {
+      rejectBtn.addEventListener('click', () => {
+        localStorage.setItem(STORAGE_KEY, 'rejected');
+        banner.classList.remove('show');
+      });
+    }
+  });
+})();
+
 document.addEventListener('DOMContentLoaded', () => {
 
   // ---------- Active nav link highlighting ----------
