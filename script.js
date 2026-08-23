@@ -337,4 +337,43 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // ---------- Growth calculator ----------
+  const trafficInput = document.getElementById('calc-traffic');
+  const conversionInput = document.getElementById('calc-conversion');
+  const aovInput = document.getElementById('calc-aov');
+  const output = document.getElementById('calc-output');
+
+  if (trafficInput && conversionInput && aovInput && output) {
+    const trafficValue = document.getElementById('calc-traffic-value');
+    const conversionValue = document.getElementById('calc-conversion-value');
+    const aovValue = document.getElementById('calc-aov-value');
+
+    function formatNumber(n) {
+      return Math.round(n).toLocaleString('en-US');
+    }
+
+    function calculate() {
+      const traffic = parseFloat(trafficInput.value);
+      const conversion = parseFloat(conversionInput.value);
+      const aov = parseFloat(aovInput.value);
+
+      trafficValue.textContent = formatNumber(traffic);
+      conversionValue.textContent = conversion.toFixed(1) + '%';
+      aovValue.textContent = '$' + formatNumber(aov);
+
+      // Target conversion: a realistic uplift from a focused speed/UX pass —
+      // 50% relative improvement, capped so low starting rates don't explode unrealistically.
+      const target = Math.min(conversion * 1.5, conversion + 2, 6);
+      const gap = Math.max(target - conversion, 0);
+      const monthlyOpportunity = traffic * aov * (gap / 100);
+
+      output.textContent = formatNumber(monthlyOpportunity);
+    }
+
+    [trafficInput, conversionInput, aovInput].forEach(input => {
+      input.addEventListener('input', calculate);
+    });
+    calculate();
+  }
+
 });

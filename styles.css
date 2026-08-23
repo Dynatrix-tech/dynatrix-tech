@@ -712,3 +712,49 @@ section{ padding: 100px 0; }
   .cookie-banner .btn{ flex:1; }
 }
 
+/* ---------- Growth calculator ---------- */
+.calc-section{ background: var(--surface-alt); border-bottom: 2px solid var(--ink); padding: 90px 0; }
+.calc-grid{ display:grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items:start; }
+.calc-inputs{ background: var(--surface); border: 2px solid var(--ink); padding: 36px; }
+.calc-field{ margin-bottom: 24px; }
+.calc-field:last-child{ margin-bottom: 0; }
+.calc-field label{
+  display:flex; justify-content:space-between; align-items:baseline;
+  font-size: 0.78rem; font-weight:700; text-transform:uppercase; letter-spacing:.05em;
+  color: var(--ink-dim); margin-bottom: 10px;
+}
+.calc-field label .calc-value{ font-family: var(--display); font-size: 0.95rem; color: var(--blue); text-transform:none; letter-spacing:0; }
+.calc-field input[type="range"]{
+  width:100%; -webkit-appearance:none; appearance:none;
+  height: 6px; background: var(--line-soft); border-radius: 3px; outline:none;
+}
+.calc-field input[type="range"]::-webkit-slider-thumb{
+  -webkit-appearance:none; appearance:none;
+  width: 22px; height: 22px; border-radius:50%;
+  background: var(--blue); border: 3px solid #fff; box-shadow: 0 0 0 2px var(--ink);
+  cursor:pointer;
+}
+.calc-field input[type="range"]::-moz-range-thumb{
+  width: 22px; height: 22px; border-radius:50%;
+  background: var(--blue); border: 3px solid #fff; box-shadow: 0 0 0 2px var(--ink);
+  cursor:pointer;
+}
+.calc-result{
+  background: var(--ink); color:#fff; padding: 36px; height:100%;
+  display:flex; flex-direction:column; justify-content:center;
+  position:relative; overflow:hidden;
+}
+.calc-result::before{
+  content:""; position:absolute; width:180px; height:180px; background: var(--blue);
+  top:-60px; right:-60px; opacity:0.15; transform: rotate(20deg);
+}
+.calc-result-label{ font-size: 0.78rem; font-weight:700; text-transform:uppercase; letter-spacing:.05em; color: rgba(255,255,255,0.6); position:relative; z-index:1; }
+.calc-result-amount{
+  font-family: var(--display); font-size: clamp(2.4rem, 5vw, 3.4rem); color:#fff; margin: 10px 0 6px; line-height:1; position:relative; z-index:1;
+}
+.calc-result-amount .blue{ color: var(--blue); }
+.calc-result-sub{ font-size: 0.9rem; color: rgba(255,255,255,0.75); margin-bottom: 26px; position:relative; z-index:1; max-width: 380px; }
+.calc-result .btn{ position:relative; z-index:1; }
+@media (max-width: 860px){
+  .calc-grid{ grid-template-columns: 1fr; }
+}
