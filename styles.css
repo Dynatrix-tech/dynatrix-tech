@@ -308,15 +308,23 @@ section{ padding: 100px 0; }
   font-size: 0.72rem; font-weight:700; text-transform:uppercase; letter-spacing:.08em;
   color: var(--ink-faint); flex-shrink:0; white-space:nowrap;
 }
-.trusted-by-logos{ display:flex; align-items:center; gap: 40px; flex-wrap:wrap; row-gap:16px; }
+.trusted-by-logos{
+  flex: 1; min-width: 0; overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 48px, #000 calc(100% - 48px), transparent);
+  mask-image: linear-gradient(to right, transparent, #000 48px, #000 calc(100% - 48px), transparent);
+}
+.trusted-by-track{ display:flex; align-items:center; gap: 40px; width:max-content; animation: trustedScroll 22s linear infinite; }
+.trusted-by-logos:hover .trusted-by-track{ animation-play-state: paused; }
 .trusted-by-logos span{ color: var(--ink-dim); opacity:0.75; transition: opacity .15s ease; white-space:nowrap; }
 .trusted-by-logos span:hover{ opacity:1; }
 .tb-serif{ font-family: Georgia, "Times New Roman", serif; font-size: 1.15rem; font-weight:700; }
 .tb-sans{ font-family: var(--body); font-size: 0.95rem; font-weight:800; text-transform:uppercase; letter-spacing:.03em; }
 .tb-script{ font-family: Georgia, serif; font-style:italic; font-size: 1.15rem; }
 .tb-mono{ font-family: var(--display); font-size: 0.85rem; text-transform:uppercase; letter-spacing:.02em; }
+@keyframes trustedScroll{ from{ transform: translateX(0); } to{ transform: translateX(-50%); } }
 @media (max-width: 700px){
   .trusted-by-inner{ flex-direction:column; align-items:flex-start; gap:16px; }
+  .trusted-by-logos{ width:100%; }
 }
 
 .ticker-band{ background: var(--ink); overflow: hidden; padding: 16px 0; }
@@ -387,7 +395,7 @@ section{ padding: 100px 0; }
 
 /* ---------- Two column ---------- */
 .two-col{ display:grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items:center; }
-.two-col .visual-block{
+.visual-block{
   min-height:320px; border: 2px solid var(--ink); position:relative;
   display:flex; align-items:center; justify-content:center;
   background: var(--surface-alt); overflow:hidden;
@@ -702,7 +710,7 @@ section{ padding: 100px 0; }
 .cookie-banner a{ color:#fff; text-decoration: underline; }
 .cookie-banner-actions{ display:flex; gap:12px; flex-shrink:0; }
 .cookie-banner .btn{ padding: 10px 20px; font-size:0.82rem; }
-.cookie-banner .btn-ghost{ border-color: rgba(255,255,255,0.4); color:#fff; }
+.cookie-banner .btn-ghost{ background: transparent; border-color: rgba(255,255,255,0.4); color:#fff; }
 .cookie-banner .btn-ghost:hover{ background: rgba(255,255,255,0.1); }
 .cookie-banner .btn-primary{ background: var(--blue); border-color: var(--blue); }
 .cookie-banner .btn-primary:hover{ background: var(--blue-dark); }
