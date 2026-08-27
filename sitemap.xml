@@ -1,178 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://sitemaps.org">
   <url>
-    <loc>https://dynatrix-tech.github.io/dynatrix-tech/</loc>
-    <lastmod>2026-08-22</lastmod>
+    <loc>https://github.io</loc>
+    <lastmod>2026-08-27</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://dynatrix-tech.github.io/dynatrix-tech/services.html</loc>
-    <lastmod>2026-08-22</lastmod>
+    <loc>https://github.ioservices.html</loc>
+    <lastmod>2026-08-27</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://dynatrix-tech.github.io/dynatrix-tech/service-shopify.html</loc>
-    <lastmod>2026-08-22</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dynatrix-tech.github.io/dynatrix-tech/service-webflow.html</loc>
-    <lastmod>2026-08-22</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dynatrix-tech.github.io/dynatrix-tech/service-seo.html</loc>
-    <lastmod>2026-08-22</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dynatrix-tech.github.io/dynatrix-tech/service-social-marketing.html</loc>
-    <lastmod>2026-08-22</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dynatrix-tech.github.io/dynatrix-tech/service-email.html</loc>
-    <lastmod>2026-08-22</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dynatrix-tech.github.io/dynatrix-tech/service-social-management.html</loc>
-    <lastmod>2026-08-22</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dynatrix-tech.github.io/dynatrix-tech/portfolio.html</loc>
-    <lastmod>2026-08-22</lastmod>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://dynatrix-tech.github.io/dynatrix-tech/case-northfield-roasters.html</loc>
-    <lastmod>2026-08-22</lastmod>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dynatrix-tech.github.io/dynatrix-tech/case-basecamp-outfitters.html</loc>
-    <lastmod>2026-08-22</lastmod>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dynatrix-tech.github.io/dynatrix-tech/case-halcyon-studio.html</loc>
-    <lastmod>2026-08-22</lastmod>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dynatrix-tech.github.io/dynatrix-tech/case-fernway-skincare.html</loc>
-    <lastmod>2026-08-22</lastmod>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dynatrix-tech.github.io/dynatrix-tech/case-lumen-legal.html</loc>
-    <lastmod>2026-08-22</lastmod>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dynatrix-tech.github.io/dynatrix-tech/case-marlowe-co.html</loc>
-    <lastmod>2026-08-22</lastmod>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dynatrix-tech.github.io/dynatrix-tech/about.html</loc>
-    <lastmod>2026-08-22</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dynatrix-tech.github.io/dynatrix-tech/reviews.html</loc>
-    <lastmod>2026-08-22</lastmod>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dynatrix-tech.github.io/dynatrix-tech/blog.html</loc>
-    <lastmod>2026-08-22</lastmod>
+    <loc>https://github.ioportfolio.html</loc>
+    <lastmod>2026-08-27</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dynatrix-tech.github.io/dynatrix-tech/get-started.html</loc>
-    <lastmod>2026-08-22</lastmod>
+    <loc>https://github.ioreviews.html</loc>
+    <lastmod>2026-08-27</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dynatrix-tech.github.io/dynatrix-tech/contact.html</loc>
-    <lastmod>2026-08-22</lastmod>
-    <priority>0.8</priority>
+    <loc>https://github.ioservice-shopify.html</loc>
+    <lastmod>2026-08-27</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dynatrix-tech.github.io/dynatrix-tech/privacy-policy.html</loc>
-    <lastmod>2026-08-22</lastmod>
-    <priority>0.3</priority>
+    <loc>https://github.ioservice-webflow.html</loc>
+    <lastmod>2026-08-27</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dynatrix-tech.github.io/dynatrix-tech/terms.html</loc>
-    <lastmod>2026-08-22</lastmod>
-    <priority>0.3</priority>
+    <loc>https://github.ioservice-seo.html</loc>
+    <lastmod>2026-08-27</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dynatrix-tech.github.io/dynatrix-tech/sitemap.html</loc>
-    <lastmod>2026-08-22</lastmod>
-    <priority>0.3</priority>
+    <loc>https://github.ioservice-social-marketing.html</loc>
+    <lastmod>2026-08-27</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dynatrix-tech.github.io/dynatrix-tech/blog-shopify-speed-score.html</loc>
-    <lastmod>2026-08-22</lastmod>
-    <priority>0.6</priority>
+    <loc>https://github.ioservice-email.html</loc>
+    <lastmod>2026-08-27</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dynatrix-tech.github.io/dynatrix-tech/blog-cms-vs-static-pages.html</loc>
-    <lastmod>2026-08-22</lastmod>
-    <priority>0.6</priority>
+    <loc>https://github.ioservice-social-management.html</loc>
+    <lastmod>2026-08-27</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dynatrix-tech.github.io/dynatrix-tech/blog-technical-seo-audit.html</loc>
-    <lastmod>2026-08-22</lastmod>
-    <priority>0.6</priority>
+    <loc>https://github.ioprivacy-policy.html</loc>
+    <lastmod>2026-08-27</lastmod>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://dynatrix-tech.github.io/dynatrix-tech/blog-content-calendar.html</loc>
-    <lastmod>2026-08-22</lastmod>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dynatrix-tech.github.io/dynatrix-tech/blog-shopify-subscriptions.html</loc>
-    <lastmod>2026-08-22</lastmod>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dynatrix-tech.github.io/dynatrix-tech/blog-seo-revenue-not-rankings.html</loc>
-    <lastmod>2026-08-22</lastmod>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dynatrix-tech.github.io/dynatrix-tech/blog-webflow-interactions.html</loc>
-    <lastmod>2026-08-22</lastmod>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dynatrix-tech.github.io/dynatrix-tech/blog-klaviyo-flows.html</loc>
-    <lastmod>2026-08-22</lastmod>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dynatrix-tech.github.io/dynatrix-tech/blog-community-management.html</loc>
-    <lastmod>2026-08-22</lastmod>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dynatrix-tech.github.io/dynatrix-tech/blog-diy-store-audit.html</loc>
-    <lastmod>2026-08-22</lastmod>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dynatrix-tech.github.io/dynatrix-tech/blog-email-vs-social.html</loc>
-    <lastmod>2026-08-22</lastmod>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dynatrix-tech.github.io/dynatrix-tech/blog-what-happens-on-audit-call.html</loc>
-    <lastmod>2026-08-22</lastmod>
-    <priority>0.6</priority>
+    <loc>https://github.ioterms.html</loc>
+    <lastmod>2026-08-27</lastmod>
+    <priority>0.5</priority>
   </url>
 </urlset>
