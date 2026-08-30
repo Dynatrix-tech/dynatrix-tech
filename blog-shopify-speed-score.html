@@ -12,10 +12,8 @@
 <title>Why your Shopify speed score is lying to you — Dynatrix Tech Blog</title>
 <meta name="description" content="A high Lighthouse score doesn't always mean a fast checkout. Here's what we actually measure before calling a store fast — and the three fixes that move real conversion, not just the score.">
 
-<!-- Favicon -->
 <link rel="shortcut icon" href="assets/favicon.ico">
 
-<!-- Open Graph / Social -->
 <meta property="og:type" content="article">
 <meta property="og:title" content="Why your Shopify speed score is lying to you — Dynatrix Tech Blog">
 <meta property="og:description" content="A high Lighthouse score doesn't always mean a fast checkout. Here's what we actually measure before calling a store fast — and the three fixes that move real conversion, not just the score.">
@@ -96,7 +94,13 @@
 <div class="eyebrow" style="margin-top:24px;"><span class="num">/</span> Shopify</div>
 <h1 style="max-width:800px;">Why your Shopify speed score is lying to you</h1>
 <p class="lede">A high Lighthouse score doesn't always mean a fast checkout. Here's what we actually measure before calling a store fast — and the three fixes that move real conversion, not just the score.</p>
-<div class="meta" style="font-size:0.85rem; color:var(--ink-faint); margin-top:20px;">By Adaeze Okon · 7 min read</div>
+<div class="article-byline">
+<div class="avatar">AO</div>
+<div class="info">
+<div class="name">Adaeze Okon</div>
+<div class="role">Shopify Lead · 8 min read</div>
+</div>
+</div>
 </div>
 </section>
 
@@ -105,6 +109,8 @@
 <p>Every few weeks, a client sends us a screenshot: a shiny green "98" from PageSpeed Insights, followed by "so why does my store still feel slow?" It's a fair question, and the honest answer is that Lighthouse scores and real-world speed are related, but they're not the same thing.</p>
 <h2>What the score actually measures</h2>
 <p>Lighthouse tests one page — usually your homepage — under a simulated connection, on a simulated device, with a cold cache. That's a reasonable baseline, but it's not how a real customer shops. Someone browsing your catalog on their phone, on real 4G, with a dozen tabs open, is a different experience entirely. A 98 on your homepage tells you almost nothing about how your product page or checkout actually behaves.</p>
+<p>We've seen stores with a 95+ homepage score and a product page that takes four seconds to become interactive because of a review widget nobody remembers installing. The score isn't lying exactly — it's just answering a much narrower question than most people think it is.</p>
+<blockquote class="pull-quote">A 98 on your homepage tells you almost nothing about how your product page or checkout actually behaves.</blockquote>
 <h2>What we check instead</h2>
 <p>Before we call a store "fast," we look at three things Lighthouse doesn't fully capture:</p>
 <ul>
@@ -114,7 +120,15 @@
 </ul>
 <h2>The three fixes that actually move the needle</h2>
 <p>In order of impact, based on what we've seen across client stores: trimming unused apps and scripts first (almost always the biggest win), lazy-loading below-the-fold images properly instead of relying on a plugin's default settings, and serving properly sized images instead of letting the browser scale down a 4000px photo for a 400px thumbnail.</p>
-<p>None of these require a full rebuild. They're usually a focused week of work — and they're exactly what we start with on every technical audit.</p>
+<p>None of these require a full rebuild. They're usually a focused week of work — and they're exactly what we start with on every technical audit. The stores that see the biggest jump in actual conversion, not just PageSpeed score, are almost always the ones where an app audit came first.</p>
+<div class="key-takeaways">
+<h3>Key takeaways</h3>
+<ul>
+<li>A high homepage Lighthouse score doesn't guarantee a fast product page or checkout — test those separately.</li>
+<li>Third-party apps are the most common hidden cause of real-world slowness.</li>
+<li>Fixing app weight, image sizing, and lazy-loading usually beats a full rebuild in cost and speed of impact.</li>
+</ul>
+</div>
 </div>
 </section>
 

@@ -9,19 +9,19 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Subscriptions on Shopify: what we wish clients knew earlier — Dynatrix Tech Blog</title>
-<meta name="description" content="Common pitfalls when adding subscriptions to an existing store.">
+<title>Email deliverability: why your campaigns are landing in spam — Dynatrix Tech Blog</title>
+<meta name="description" content="Open rates dropping isn't always about your subject lines — sometimes it's technical, and fixable.">
 
 <link rel="shortcut icon" href="assets/favicon.ico">
 
 <meta property="og:type" content="article">
-<meta property="og:title" content="Subscriptions on Shopify: what we wish clients knew earlier — Dynatrix Tech Blog">
-<meta property="og:description" content="Common pitfalls when adding subscriptions to an existing store.">
+<meta property="og:title" content="Email deliverability: why your campaigns are landing in spam — Dynatrix Tech Blog">
+<meta property="og:description" content="Open rates dropping isn't always about your subject lines — sometimes it's technical, and fixable.">
 <meta property="og:image" content="https://dynatrixtech.com/assets/og-image.png">
-<meta property="og:url" content="https://dynatrixtech.com/blog-shopify-subscriptions.html">
+<meta property="og:url" content="https://dynatrixtech.com/blog-email-deliverability.html">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Subscriptions on Shopify: what we wish clients knew earlier — Dynatrix Tech Blog">
-<meta name="twitter:description" content="Common pitfalls when adding subscriptions to an existing store.">
+<meta name="twitter:title" content="Email deliverability: why your campaigns are landing in spam — Dynatrix Tech Blog">
+<meta name="twitter:description" content="Open rates dropping isn't always about your subject lines — sometimes it's technical, and fixable.">
 <meta name="twitter:image" content="https://dynatrixtech.com/assets/og-image.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -91,14 +91,14 @@
 <section class="page-hero">
 <div class="container">
 <a class="link-arrow" href="blog.html">← All articles</a>
-<div class="eyebrow" style="margin-top:24px;"><span class="num">/</span> Shopify</div>
-<h1 style="max-width:800px;">Subscriptions on Shopify: what we wish clients knew earlier</h1>
-<p class="lede">Common pitfalls when adding subscriptions to an existing store.</p>
+<div class="eyebrow" style="margin-top:24px;"><span class="num">/</span> Email</div>
+<h1 style="max-width:800px;">Email deliverability: why your campaigns are landing in spam</h1>
+<p class="lede">Open rates dropping isn't always about your subject lines — sometimes it's technical, and fixable.</p>
 <div class="article-byline">
-<div class="avatar">AO</div>
+<div class="avatar">LF</div>
 <div class="info">
-<div class="name">Adaeze Okon</div>
-<div class="role">Shopify Lead · 9 min read</div>
+<div class="name">Leo Fischer</div>
+<div class="role">Social & Content Lead · 8 min read</div>
 </div>
 </div>
 </div>
@@ -106,24 +106,24 @@
 
 <section class="section-tight">
 <div class="container legal-content">
-<p>Subscriptions are one of the highest-leverage additions to an existing Shopify store — and also one of the most commonly rushed. Here's what tends to get missed.</p>
-<h2>The theme usually isn't ready</h2>
-<p>Most subscription apps bolt a widget onto your existing product page and call it done. The result often looks like an afterthought — because it is one. We treat the subscription option as a real part of the product page design, not a plugin sitting awkwardly below the "Add to cart" button.</p>
-<h2>Cancellation flow matters more than signup flow</h2>
-<p>It's tempting to focus entirely on getting people to subscribe. But a painful cancellation experience — hidden behind support emails, buried in account settings — creates resentment that shows up in chargebacks and bad reviews. A clean, honest cancellation flow actually improves retention, because people trust a subscription they know they can leave.</p>
-<blockquote class="pull-quote">A clean, honest cancellation flow actually improves retention, because people trust a subscription they know they can leave.</blockquote>
-<h2>Inventory planning gets harder, not easier</h2>
-<p>Recurring orders sound predictable, but skips, pauses, and plan changes mean your inventory forecasting needs to account for real subscriber behavior — not just "X people times Y frequency." We build this into the reporting from day one, not as an afterthought once the numbers get confusing.</p>
-<h2>Start narrower than feels comfortable</h2>
-<p>Launching subscriptions across your entire catalog on day one is rarely the right call. We usually recommend starting with two or three genuinely repeat-purchase products, proving the mechanics work cleanly, then expanding — rather than debugging subscription logic across fifty SKUs at once.</p>
-<h2>Pricing the subscription discount correctly</h2>
-<p>A discount that's too small doesn't move anyone to subscribe. A discount that's too large quietly erodes margin on your best, most loyal customers — the ones you're least trying to discount. We usually land subscription pricing by working backward from your actual margin and customer lifetime value, not by copying whatever percentage a competitor uses.</p>
+<p>When open rates drop, most people's first instinct is to blame the subject line. Sometimes that's right. But often, the real problem is technical — your emails are landing in spam or a promotions tab before anyone even gets the chance to not open them.</p>
+<h2>The authentication basics most stores skip</h2>
+<p>SPF, DKIM, and DMARC are technical records that tell inbox providers your emails are genuinely coming from you, not being spoofed. Missing or misconfigured records are one of the most common, most fixable causes of poor deliverability we find — and most store owners have never even heard of them, let alone checked whether they're set up correctly.</p>
+<h2>Sender reputation is a real, trackable thing</h2>
+<p>Inbox providers track how recipients treat your emails over time — opens, clicks, and critically, spam complaints and deletions without opening. A poor reputation, once established, actively suppresses your future emails into spam folders even for genuinely interested subscribers, which is why deliverability problems tend to compound rather than stay flat.</p>
+<blockquote class="pull-quote">A poor sender reputation actively suppresses your future emails into spam folders, even for genuinely interested subscribers.</blockquote>
+<h2>List hygiene matters more than list size</h2>
+<p>Continuing to email addresses that never open, never click, and haven't engaged in months actively drags down your sender reputation with every send. A smaller, genuinely engaged list consistently outperforms a larger, stale one — both in open rates and, more importantly, in actual revenue per email sent.</p>
+<h2>Content patterns that trigger spam filters</h2>
+<p>ALL CAPS subject lines, excessive exclamation points, and image-only emails with little to no real text all read as spam-like patterns to modern filters — not because any single one is disqualifying, but because they cumulatively signal lower-quality sending behavior to increasingly sophisticated spam detection.</p>
+<h2>How we actually diagnose this for clients</h2>
+<p>We check authentication records first — a five-minute technical check that catches a surprising number of cases. Then we look at engagement trends over the last few months, not just the most recent campaign, since a slow decline usually points to reputation or list quality, while a sudden single-campaign drop usually points to that specific email's content or a technical send issue.</p>
 <div class="key-takeaways">
 <h3>Key takeaways</h3>
 <ul>
-<li>Design the subscription option as a real part of the product page, not a bolted-on widget.</li>
-<li>An easy cancellation flow improves trust and retention — don't hide it.</li>
-<li>Start with 2–3 products before rolling subscriptions out catalog-wide.</li>
+<li>Check SPF, DKIM, and DMARC records first — misconfiguration is a common, fixable cause of poor deliverability.</li>
+<li>Sender reputation compounds — a smaller, engaged list consistently outperforms a larger, stale one.</li>
+<li>ALL CAPS, excessive exclamation points, and image-only emails read as spam-like patterns to modern filters.</li>
 </ul>
 </div>
 </div>

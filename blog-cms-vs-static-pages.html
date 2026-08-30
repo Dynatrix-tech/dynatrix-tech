@@ -12,10 +12,8 @@
 <title>CMS collections vs. static pages: when to use each — Dynatrix Tech Blog</title>
 <meta name="description" content="A practical framework for deciding what belongs in Webflow's CMS.">
 
-<!-- Favicon -->
 <link rel="shortcut icon" href="assets/favicon.ico">
 
-<!-- Open Graph / Social -->
 <meta property="og:type" content="article">
 <meta property="og:title" content="CMS collections vs. static pages: when to use each — Dynatrix Tech Blog">
 <meta property="og:description" content="A practical framework for deciding what belongs in Webflow's CMS.">
@@ -96,7 +94,13 @@
 <div class="eyebrow" style="margin-top:24px;"><span class="num">/</span> Webflow</div>
 <h1 style="max-width:800px;">CMS collections vs. static pages: when to use each</h1>
 <p class="lede">A practical framework for deciding what belongs in Webflow's CMS.</p>
-<div class="meta" style="font-size:0.85rem; color:var(--ink-faint); margin-top:20px;">By Marcus Whitfield · 5 min read</div>
+<div class="article-byline">
+<div class="avatar">MW</div>
+<div class="info">
+<div class="name">Marcus Whitfield</div>
+<div class="role">Webflow & Design Lead · 6 min read</div>
+</div>
+</div>
 </div>
 </section>
 
@@ -115,8 +119,19 @@
 <li>The layout needs real design flexibility that doesn't fit a repeatable template</li>
 <li>It changes rarely enough that editing the page directly isn't a burden</li>
 </ul>
+<blockquote class="pull-quote">The fix is almost always to ask: will a non-developer need to touch this in the next six months?</blockquote>
 <h2>The mistake we see most often</h2>
 <p>Teams either over-CMS everything (turning a 3-page "Our Values" section into a bloated collection nobody needed) or under-CMS the wrong thing (hard-coding a "Team" page that needs a developer every time someone new joins). The fix is almost always to ask: will a non-developer need to touch this in the next six months? If yes, it belongs in the CMS. If no, keep it simple.</p>
+<h2>A middle ground worth knowing about</h2>
+<p>Webflow's Symbol and component system lets you get some of the CMS's consistency benefits — a shared header, a repeated card layout — without a full collection behind it. For content that's structurally repeatable but small in number (say, four service tiers that almost never change), a symbol-based static approach is often the right middle ground, giving you design consistency without the overhead of managing a collection for something that barely changes.</p>
+<div class="key-takeaways">
+<h3>Key takeaways</h3>
+<ul>
+<li>CMS collections are for repeatable, growing, non-developer-edited content.</li>
+<li>Static pages are for one-of-a-kind pages with real design flexibility.</li>
+<li>Symbols/components can bridge the gap for small, structurally repeatable content.</li>
+</ul>
+</div>
 </div>
 </section>
 

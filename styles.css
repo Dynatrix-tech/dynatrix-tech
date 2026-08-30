@@ -792,3 +792,28 @@ section{ padding: 100px 0; }
 .hero-quote .quote-attribution .attr-sub{
   font-size: 0.78rem; color: rgba(255,255,255,0.6); display:block; margin-top:1px;
 }
+/* ---------- Blog article design system ---------- */
+.article-byline{ display:flex; align-items:center; gap:12px; margin-top:22px; }
+.article-byline .avatar{
+  width:42px; height:42px; border-radius:50%; background: var(--ink); color:#fff;
+  display:flex; align-items:center; justify-content:center;
+  font-family: var(--display); font-size: 0.85rem; flex-shrink:0; border: 2px solid var(--blue);
+}
+.article-byline .info{ line-height:1.35; }
+.article-byline .info .name{ font-weight:700; font-size:0.88rem; color: var(--ink); }
+.article-byline .info .role{ font-size:0.76rem; color: var(--ink-faint); }
+.pull-quote{
+  border-left: 4px solid var(--blue); padding-left: 24px; margin: 38px 0;
+  font-family: var(--display); font-size: 1.25rem; line-height: 1.4; color: var(--ink); text-transform:none;
+}
+.key-takeaways{
+  background: var(--surface-alt); border: 2px solid var(--ink); padding: 30px 32px; margin: 40px 0 8px;
+}
+.key-takeaways h3{
+  font-family: var(--display); font-size: 0.85rem; text-transform:uppercase; letter-spacing:.05em;
+  margin: 0 0 18px; color: var(--ink);
+}
+.key-takeaways ul{ margin:0; padding-left: 20px; }
+.key-takeaways li{ margin-bottom: 12px; font-size: 0.94rem; color: var(--ink-dim); line-height:1.5; }
+.key-takeaways li:last-child{ margin-bottom:0; }
+.article-tags{ display:flex; gap:10px; flex-wrap:wrap; margin-top:20px; }
