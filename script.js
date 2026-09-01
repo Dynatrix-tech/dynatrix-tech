@@ -337,6 +337,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Blog email signup (placeholder submit, same pattern as other forms)
+  const blogSignupForm = document.getElementById('blog-email-signup');
+  if (blogSignupForm) {
+    blogSignupForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const success = document.getElementById('blog-signup-success');
+      if (success) {
+        success.classList.add('show');
+        success.textContent = "Thanks — you're on the list for new guides.";
+      }
+      blogSignupForm.reset();
+    });
+  }
+
   // ---------- Growth calculator ----------
   const trafficInput = document.getElementById('calc-traffic');
   const conversionInput = document.getElementById('calc-conversion');
